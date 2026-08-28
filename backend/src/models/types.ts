@@ -7,12 +7,39 @@ export type InvoiceStatus =
   | 'IN_MARKET'
   | 'OFFERS_RECEIVED'
   | 'MATCHED'
+  | 'FINANCING_INITIATED'
   | 'FINANCED'
+  | 'SETTLEMENT_PENDING'
   | 'SETTLED'
   | 'DEFAULTED';
 
 export type ProviderType = 'BANK' | 'NBFC' | 'PRIVATE_CREDIT' | 'FINTECH';
 export type RiskAppetite = 'CONSERVATIVE' | 'MODERATE' | 'AGGRESSIVE' | 'HIGH_YIELD';
+
+export type UserRole = 'SUPPLIER' | 'ADMIN';
+
+export interface User {
+  id: string;
+  email: string;
+  passwordHash: string;
+  salt: string;
+  name: string;
+  phone?: string;
+  role: UserRole;
+  supplierId: string;
+  createdAt: string;
+}
+
+export interface UserSafeProfile {
+  id: string;
+  email: string;
+  name: string;
+  phone?: string;
+  role: UserRole;
+  supplierId: string;
+  supplierName?: string;
+  createdAt: string;
+}
 
 export interface SupplierPreferences {
   urgencyLevel: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';
@@ -50,6 +77,9 @@ export interface Buyer {
   disputeRatePercent: number;
 }
 
+export type RiskBand = 'LOW' | 'MEDIUM' | 'HIGH';
+export type RiskConfidence = 'HIGH' | 'MEDIUM' | 'LOW';
+
 export interface VerificationResult {
   status: 'PASSED' | 'FLAGGED' | 'FAILED';
   verificationScore: number;
@@ -64,6 +94,10 @@ export interface VerificationResult {
 
 export interface RiskAssessment {
   compositeScore: number;
+  riskScore: number;
+  riskBand: RiskBand;
+  riskConfidence: RiskConfidence;
+  riskReasons: string[];
   riskTier: RiskTier;
   buyerRiskScore: number;
   supplierRiskScore: number;
@@ -73,6 +107,14 @@ export interface RiskAssessment {
   recommendedBaseRate: number;
   explanation: string;
   assessedAt: string;
+}
+
+export interface MatchResult {
+  provider: CapitalProvider;
+  isEligible: boolean;
+  exclusionReason?: string;
+  eligibilityReasons?: string[];
+  suitabilityScore: number;
 }
 
 export interface Invoice {
@@ -92,6 +134,18 @@ export interface Invoice {
   preferences: SupplierPreferences;
   verificationResult?: VerificationResult;
   riskAssessment?: RiskAssessment;
+  matches?: MatchResult[];
+  matchedProviderId?: string;
+  matchedOfferId?: string;
+  matchedAmountLakhs?: number;
+  matchedAt?: string;
+  financingInitiatedAt?: string;
+  financedAmountLakhs?: number;
+  financedAt?: string;
+  settlementStatus?: 'PENDING' | 'SETTLED' | 'DEFAULTED';
+  settledAt?: string;
+  settledAmountLakhs?: number;
+  documentUrl?: string;
   createdAt: string;
 }
 

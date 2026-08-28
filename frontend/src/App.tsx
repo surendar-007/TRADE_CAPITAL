@@ -6,7 +6,9 @@ import { SupplierPortal } from './components/SupplierPortal';
 import { ProviderDesk } from './components/ProviderDesk';
 import { MarketAnalytics } from './components/MarketAnalytics';
 import { AgentLogsDrawer } from './components/AgentLogsDrawer';
-import { MarketplaceState } from './types';
+import { AuthModal } from './components/AuthModal';
+import { SupplierProfileModal } from './components/SupplierProfileModal';
+import { MarketplaceState, UserSafeProfile } from './types';
 
 export const App: React.FC = () => {
   const [state, setState] = useState<MarketplaceState | null>(null);
@@ -15,12 +17,37 @@ export const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isResetting, setIsResetting] = useState(false);
 
+  // Authentication & Profile State
+  const [currentUser, setCurrentUser] = useState<UserSafeProfile | null>(() => {
+    try {
+      const savedUser = sessionStorage.getItem('tc_user');
+      return savedUser ? JSON.parse(savedUser) : null;
+    } catch {
+      return null;
+    }
+  });
+  const [authToken, setAuthToken] = useState<string | null>(() => {
+    return sessionStorage.getItem('tc_token');
+  });
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+  const [pendingProtectedTab, setPendingProtectedTab] = useState<string | null>(null);
+
   const fetchState = async () => {
     try {
-      const res = await fetch('/api/state');
+      const headers: Record<string, string> = {};
+      const token = sessionStorage.getItem('tc_token');
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
+
+      const res = await fetch('/api/state', { headers });
       if (res.ok) {
         const data = await res.json();
         setState(data);
+        if (data.currentUser) {
+          setCurrentUser(data.currentUser);
+        }
       }
     } catch (err) {
       console.error('Failed to fetch marketplace state:', err);
@@ -32,6 +59,57 @@ export const App: React.FC = () => {
   useEffect(() => {
     fetchState();
   }, []);
+
+  const handleTabChange = (tabId: string) => {
+    // Protected Tabs: Supplier Portal & Clearing Pipeline require authentication
+    if ((tabId === 'supplier' || tabId === 'pipeline') && !currentUser) {
+      setPendingProtectedTab(tabId);
+      setIsAuthModalOpen(true);
+      return;
+    }
+    setActiveTab(tabId);
+  };
+
+  const handleLoginSuccess = (user: UserSafeProfile, token: string) => {
+    sessionStorage.setItem('tc_token', token);
+    sessionStorage.setItem('tc_user', JSON.stringify(user));
+    setCurrentUser(user);
+    setAuthToken(token);
+    setIsAuthModalOpen(false);
+
+    if (pendingProtectedTab) {
+      setActiveTab(pendingProtectedTab);
+      setPendingProtectedTab(null);
+    } else if (activeTab !== 'supplier' && activeTab !== 'pipeline') {
+      setActiveTab('supplier');
+    }
+    fetchState();
+  };
+
+  const handleSignOut = async () => {
+    const token = sessionStorage.getItem('tc_token');
+    if (token) {
+      try {
+        await fetch('/api/auth/signout', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+      } catch (err) {
+        console.error('Sign out error:', err);
+      }
+    }
+
+    sessionStorage.removeItem('tc_token');
+    sessionStorage.removeItem('tc_user');
+    setCurrentUser(null);
+    setAuthToken(null);
+
+    // If currently on a protected tab, redirect to public benchmark scenarios
+    if (activeTab === 'supplier' || activeTab === 'pipeline') {
+      setActiveTab('scenarios');
+    }
+    fetchState();
+  };
 
   const handleReset = async () => {
     setIsResetting(true);
@@ -82,11 +160,34 @@ export const App: React.FC = () => {
     }
   };
 
+  const handleInitiateFinance = async (invoiceId: string, offerId?: string) => {
+    try {
+      const token = sessionStorage.getItem('tc_token');
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+
+      const res = await fetch(`/api/invoices/${invoiceId}/finance/initiate`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ offerId })
+      });
+      if (res.ok) {
+        await fetchState();
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   const handleFinanceOffer = async (invoiceId: string, offerId: string) => {
     try {
+      const token = sessionStorage.getItem('tc_token');
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+
       const res = await fetch(`/api/invoices/${invoiceId}/finance`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ offerId })
       });
       if (res.ok) {
@@ -99,9 +200,13 @@ export const App: React.FC = () => {
 
   const handleSettleFinancing = async (recordId: string, isSuccessful: boolean = true) => {
     try {
+      const token = sessionStorage.getItem('tc_token');
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+
       const res = await fetch(`/api/financing/${recordId}/settle`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ isSuccessful })
       });
       if (res.ok) {
@@ -130,11 +235,15 @@ export const App: React.FC = () => {
     }
   };
 
-  const handleSubmitInvoice = async (invoiceData: any) => {
+  const handleSubmitInvoice = async (invoiceId: string, invoiceData: any) => {
     try {
-      const res = await fetch('/api/invoices', {
+      const token = sessionStorage.getItem('tc_token');
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+
+      const res = await fetch(`/api/invoices/${invoiceId}/submit`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify(invoiceData)
       });
       if (res.ok) {
@@ -142,9 +251,13 @@ export const App: React.FC = () => {
         setSelectedInvoiceId(data.invoice.id);
         await fetchState();
         setActiveTab('pipeline');
+      } else {
+        const errData = await res.json();
+        throw new Error(errData.error || 'Failed to submit invoice to clearing pipeline.');
       }
     } catch (err) {
-      console.error(err);
+      console.error('Submit invoice error:', err);
+      throw err;
     }
   };
 
@@ -159,15 +272,21 @@ export const App: React.FC = () => {
     );
   }
 
+  const currentSupplier = state?.suppliers.find(s => s.id === currentUser?.supplierId) || null;
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       {/* Top Navigation */}
       <Navbar
         metrics={state.metrics}
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        setActiveTab={handleTabChange}
         onReset={handleReset}
         isResetting={isResetting}
+        currentUser={currentUser}
+        onOpenSignIn={() => setIsAuthModalOpen(true)}
+        onSignOut={handleSignOut}
+        onOpenProfile={() => setIsProfileModalOpen(true)}
       />
 
       {/* Main Content Area */}
@@ -177,7 +296,7 @@ export const App: React.FC = () => {
             state={state}
             onRunScenario={handleRunScenario}
             onSelectInvoice={setSelectedInvoiceId}
-            setActiveTab={setActiveTab}
+            setActiveTab={handleTabChange}
           />
         )}
 
@@ -189,6 +308,7 @@ export const App: React.FC = () => {
             onVerify={handleVerify}
             onAssessRisk={handleAssessRisk}
             onClearMarket={handleClearMarket}
+            onInitiateFinance={handleInitiateFinance}
             onFinanceOffer={handleFinanceOffer}
             onSettleFinancing={handleSettleFinancing}
           />
@@ -200,7 +320,7 @@ export const App: React.FC = () => {
             onSelectInvoice={setSelectedInvoiceId}
             onSubmitInvoice={handleSubmitInvoice}
             onClearMarket={handleClearMarket}
-            setActiveTab={setActiveTab}
+            setActiveTab={handleTabChange}
           />
         )}
 
@@ -216,6 +336,24 @@ export const App: React.FC = () => {
           <AgentLogsDrawer logs={state.logs} />
         )}
       </main>
+
+      {/* Login & Registration Modal */}
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => {
+          setIsAuthModalOpen(false);
+          setPendingProtectedTab(null);
+        }}
+        onLoginSuccess={handleLoginSuccess}
+      />
+
+      {/* Read-Only Supplier Profile Modal */}
+      <SupplierProfileModal
+        isOpen={isProfileModalOpen}
+        onClose={() => setIsProfileModalOpen(false)}
+        user={currentUser}
+        supplier={currentSupplier}
+      />
 
       {/* Footer */}
       <footer style={{ borderTop: '1px solid var(--border-subtle)', background: 'rgba(7, 11, 20, 0.95)', padding: '16px 24px', textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-faint)' }}>

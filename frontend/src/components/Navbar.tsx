@@ -1,6 +1,6 @@
 import React from 'react';
-import { ShieldCheck, Activity, RefreshCw, Layers, TrendingUp, DollarSign, Clock } from 'lucide-react';
-import { MarketMetrics } from '../types';
+import { ShieldCheck, Activity, RefreshCw, Layers, TrendingUp, DollarSign, Clock, LogIn, LogOut, User as UserIcon } from 'lucide-react';
+import { MarketMetrics, UserSafeProfile } from '../types';
 
 interface NavbarProps {
   metrics?: MarketMetrics;
@@ -8,6 +8,10 @@ interface NavbarProps {
   setActiveTab: (tab: string) => void;
   onReset: () => void;
   isResetting: boolean;
+  currentUser?: UserSafeProfile | null;
+  onOpenSignIn: () => void;
+  onSignOut: () => void;
+  onOpenProfile?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -15,7 +19,11 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeTab,
   setActiveTab,
   onReset,
-  isResetting
+  isResetting,
+  currentUser,
+  onOpenSignIn,
+  onSignOut,
+  onOpenProfile
 }) => {
   return (
     <header style={{ borderBottom: '1px solid var(--border-subtle)', background: '#ffffff', position: 'sticky', top: 0, zIndex: 50, boxShadow: 'var(--shadow-sm)' }}>
@@ -47,12 +55,56 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
 
-        {/* Live Engine Status & Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        {/* Live Engine Status & Auth / Actions */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
           <div className="badge badge-emerald" style={{ padding: '6px 12px', fontSize: '0.75rem' }}>
             <Activity size={14} />
             Market Clearing: Active
           </div>
+
+          {currentUser ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button 
+                type="button"
+                onClick={onOpenProfile}
+                title="View Supplier Profile"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  padding: '5px 12px',
+                  background: '#eff6ff',
+                  border: '1px solid #bfdbfe',
+                  borderRadius: '6px',
+                  fontSize: '0.775rem',
+                  color: 'var(--primary-blue)',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease'
+                }}
+              >
+                <UserIcon size={13} color="var(--primary-blue)" />
+                <span>{currentUser.name}</span>
+              </button>
+              <button 
+                className="btn btn-secondary" 
+                onClick={onSignOut}
+                style={{ fontSize: '0.8rem', padding: '7px 13px' }}
+              >
+                <LogOut size={13} />
+                Sign Out
+              </button>
+            </div>
+          ) : (
+            <button 
+              className="btn btn-primary" 
+              onClick={onOpenSignIn}
+              style={{ fontSize: '0.8rem', padding: '7px 14px' }}
+            >
+              <LogIn size={13} />
+              Sign In
+            </button>
+          )}
 
           <button 
             className="btn btn-secondary" 

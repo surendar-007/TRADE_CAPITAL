@@ -7,12 +7,27 @@ export type InvoiceStatus =
   | 'IN_MARKET'
   | 'OFFERS_RECEIVED'
   | 'MATCHED'
+  | 'FINANCING_INITIATED'
   | 'FINANCED'
+  | 'SETTLEMENT_PENDING'
   | 'SETTLED'
   | 'DEFAULTED';
 
 export type ProviderType = 'BANK' | 'NBFC' | 'PRIVATE_CREDIT' | 'FINTECH';
 export type RiskAppetite = 'CONSERVATIVE' | 'MODERATE' | 'AGGRESSIVE' | 'HIGH_YIELD';
+
+export type UserRole = 'SUPPLIER' | 'ADMIN';
+
+export interface UserSafeProfile {
+  id: string;
+  email: string;
+  name: string;
+  phone?: string;
+  role: UserRole;
+  supplierId: string;
+  supplierName?: string;
+  createdAt: string;
+}
 
 export interface SupplierPreferences {
   urgencyLevel: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';
@@ -50,6 +65,9 @@ export interface Buyer {
   disputeRatePercent: number;
 }
 
+export type RiskBand = 'LOW' | 'MEDIUM' | 'HIGH';
+export type RiskConfidence = 'HIGH' | 'MEDIUM' | 'LOW';
+
 export interface VerificationResult {
   status: 'PASSED' | 'FLAGGED' | 'FAILED';
   verificationScore: number;
@@ -64,6 +82,10 @@ export interface VerificationResult {
 
 export interface RiskAssessment {
   compositeScore: number;
+  riskScore: number;
+  riskBand: RiskBand;
+  riskConfidence: RiskConfidence;
+  riskReasons: string[];
   riskTier: RiskTier;
   buyerRiskScore: number;
   supplierRiskScore: number;
@@ -73,6 +95,14 @@ export interface RiskAssessment {
   recommendedBaseRate: number;
   explanation: string;
   assessedAt: string;
+}
+
+export interface MatchResult {
+  provider: CapitalProvider;
+  isEligible: boolean;
+  exclusionReason?: string;
+  eligibilityReasons?: string[];
+  suitabilityScore: number;
 }
 
 export interface Invoice {
@@ -92,6 +122,18 @@ export interface Invoice {
   preferences: SupplierPreferences;
   verificationResult?: VerificationResult;
   riskAssessment?: RiskAssessment;
+  matches?: MatchResult[];
+  matchedProviderId?: string;
+  matchedOfferId?: string;
+  matchedAmountLakhs?: number;
+  matchedAt?: string;
+  financingInitiatedAt?: string;
+  financedAmountLakhs?: number;
+  financedAt?: string;
+  settlementStatus?: 'PENDING' | 'SETTLED' | 'DEFAULTED';
+  settledAt?: string;
+  settledAmountLakhs?: number;
+  documentUrl?: string;
   createdAt: string;
 }
 
@@ -207,3 +249,56 @@ export interface MarketplaceState {
   logs: AgentLog[];
   metrics: MarketMetrics;
 }
+
+export type FieldStatus = 'EXTRACTED' | 'UNCERTAIN' | 'MISSING';
+
+export interface ExtractedField<T = string> {
+  value: T | null;
+  rawText?: string;
+  formatted?: string;
+  status: FieldStatus;
+  confidence: number;
+}
+
+export interface ExtractedInvoiceData {
+  invoiceNumber: ExtractedField<string>;
+  supplierName: ExtractedField<string> & { matchedSupplierId?: string; matchConfidence?: number };
+  buyerName: ExtractedField<string> & { matchedBuyerId?: string; matchConfidence?: number };
+  invoiceAmount: ExtractedField<number> & { amountLakhs?: number };
+  currency: ExtractedField<string>;
+  invoiceDate: ExtractedField<string>;
+  dueDate: ExtractedField<string>;
+  paymentTerms: ExtractedField<string>;
+  tenorDays: ExtractedField<number>;
+  purchaseOrderNumber?: ExtractedField<string>;
+  eWayBillNumber?: ExtractedField<string>;
+  goodsDescription?: ExtractedField<string>;
+}
+
+export interface VerificationCheckItem {
+  key: string;
+  label: string;
+  passed: boolean;
+  message?: string;
+}
+
+export type ScanVerificationStatus = 'VERIFIED' | 'NEEDS REVIEW' | 'INCOMPLETE';
+
+export interface ScanVerificationResult {
+  status: ScanVerificationStatus;
+  checklist: VerificationCheckItem[];
+  summary: string;
+  missingFields: string[];
+  uncertainFields: string[];
+}
+
+export interface ScanInvoiceResponse {
+  success: boolean;
+  filename: string;
+  fileSize: number;
+  mimeType: string;
+  extractedText: string;
+  extractedFields: ExtractedInvoiceData;
+  verification: ScanVerificationResult;
+}
+

@@ -211,6 +211,12 @@ body {
   opacity: 1;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Inputs and Forms */
 input, select, textarea {
   font-family: var(--font-sans);

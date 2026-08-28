@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Trophy, 
   Clock, 
   CheckCircle2,
-  AlertCircle
+  AlertCircle,
+  HelpCircle
 } from 'lucide-react';
 import { FinancingOffer, Invoice, CapitalProvider } from '../types';
+import { ExplainableDecisionModal } from './ExplainableDecisionModal';
 
 interface OfferComparisonRadarProps {
   invoice: Invoice;
@@ -18,9 +20,13 @@ interface OfferComparisonRadarProps {
 export const OfferComparisonRadar: React.FC<OfferComparisonRadarProps> = ({
   invoice,
   offers,
+  providers,
   onFinanceOffer,
   isFinancing
 }) => {
+  const [isWhyModalOpen, setIsWhyModalOpen] = useState(false);
+  const [selectedWhyOfferId, setSelectedWhyOfferId] = useState<string>('');
+
   if (!offers || offers.length === 0) {
     return (
       <div className="glass-card" style={{ textAlign: 'center', padding: '36px 20px' }}>
@@ -35,6 +41,11 @@ export const OfferComparisonRadar: React.FC<OfferComparisonRadarProps> = ({
   const lowestRateOffer = [...offers].sort((a, b) => a.interestRatePercent - b.interestRatePercent)[0];
   const isDifferentFromLowestRate = winningOffer.id !== lowestRateOffer.id;
 
+  const handleOpenWhy = (offerId: string) => {
+    setSelectedWhyOfferId(offerId);
+    setIsWhyModalOpen(true);
+  };
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
       {/* Key Insight Breakdown Card */}
@@ -45,11 +56,30 @@ export const OfferComparisonRadar: React.FC<OfferComparisonRadarProps> = ({
           borderRadius: '8px',
           padding: '16px 20px'
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
-            <CheckCircle2 size={18} color="var(--primary-blue)" />
-            <h4 style={{ fontSize: '0.925rem', fontWeight: 600, color: 'var(--primary-blue)' }}>
-              Clearing Insight: Why Lowest Interest Rate Was Not The Best Fit
-            </h4>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <CheckCircle2 size={18} color="var(--primary-blue)" />
+              <h4 style={{ fontSize: '0.925rem', fontWeight: 600, color: 'var(--primary-blue)' }}>
+                Clearing Insight: Why Lowest Interest Rate Was Not The Best Fit
+              </h4>
+            </div>
+
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={() => handleOpenWhy(winningOffer.id)}
+              style={{
+                fontSize: '0.75rem',
+                padding: '4px 10px',
+                background: '#ffffff',
+                border: '1px solid #bfdbfe',
+                color: 'var(--primary-blue)',
+                fontWeight: 600
+              }}
+            >
+              <HelpCircle size={13} />
+              Why? Full Explanation
+            </button>
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '12px' }}>
@@ -180,18 +210,40 @@ export const OfferComparisonRadar: React.FC<OfferComparisonRadarProps> = ({
                     </td>
 
                     <td style={{ padding: '10px 8px', textAlign: 'right' }}>
-                      {isWinner ? (
-                        <button
-                          className="btn btn-success"
-                          onClick={() => onFinanceOffer(invoice.id, offer.id)}
-                          disabled={isFinancing || invoice.status === 'FINANCED' || invoice.status === 'SETTLED'}
-                          style={{ fontSize: '0.75rem', padding: '5px 12px' }}
-                        >
-                          {invoice.status === 'FINANCED' ? 'Financed' : (invoice.status === 'SETTLED' ? 'Settled' : 'Disburse Capital')}
-                        </button>
-                      ) : (
-                        <span style={{ color: 'var(--text-faint)', fontSize: '0.75rem' }}>Outranked</span>
-                      )}
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '6px' }}>
+                        {(offer.rank === 1 || isWinner) && (
+                          <button
+                            type="button"
+                            className="btn btn-secondary"
+                            onClick={() => handleOpenWhy(offer.id)}
+                            style={{
+                              fontSize: '0.725rem',
+                              padding: '4px 9px',
+                              background: '#eff6ff',
+                              border: '1px solid #bfdbfe',
+                              color: 'var(--primary-blue)',
+                              fontWeight: 600
+                            }}
+                            title="Why was this provider selected?"
+                          >
+                            <HelpCircle size={12} />
+                            Why?
+                          </button>
+                        )}
+
+                        {isWinner ? (
+                          <button
+                            className="btn btn-success"
+                            onClick={() => onFinanceOffer(invoice.id, offer.id)}
+                            disabled={isFinancing || invoice.status === 'FINANCED' || invoice.status === 'SETTLED'}
+                            style={{ fontSize: '0.75rem', padding: '5px 12px' }}
+                          >
+                            {invoice.status === 'FINANCED' ? 'Financed' : (invoice.status === 'SETTLED' ? 'Settled' : 'Disburse Capital')}
+                          </button>
+                        ) : (
+                          <span style={{ color: 'var(--text-faint)', fontSize: '0.725rem', padding: '0 4px' }}>Outranked</span>
+                        )}
+                      </div>
                     </td>
                   </tr>
                 );
@@ -200,6 +252,16 @@ export const OfferComparisonRadar: React.FC<OfferComparisonRadarProps> = ({
           </table>
         </div>
       </div>
+
+      {/* Explainable Decision Modal */}
+      <ExplainableDecisionModal
+        isOpen={isWhyModalOpen}
+        onClose={() => setIsWhyModalOpen(false)}
+        invoice={invoice}
+        offers={offers}
+        providers={providers}
+        initialOfferId={selectedWhyOfferId}
+      />
     </div>
   );
 };

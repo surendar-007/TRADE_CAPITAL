@@ -74,6 +74,7 @@ export class ScenarioRunner {
 
     // Step 3: Provider Matching & Discovery
     const { matches, logs: matchLogs } = MatchingEngine.discoverAndFilterProviders(invoice, riskResult, providers);
+    invoice.matches = matches;
     allLogs.push(...matchLogs);
 
     const eligibleMatches = matches.filter(m => m.isEligible);
