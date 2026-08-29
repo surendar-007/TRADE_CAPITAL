@@ -1,0 +1,2888 @@
+{
+  "users": [
+    {
+      "id": "usr-demo-apex",
+      "email": "demo.supplier@apex.com",
+      "passwordHash": "97344b732bac1f1136b549eba7b43f2691ef0d90f2a7503bd3c5aea8ac249fddc5df7002631d978fdefe591322d4e938e03570d81db87506614eb130c3868784",
+      "salt": "883e618f3f9ca47b1304a4aeacfa0b24",
+      "name": "Rajesh Sharma",
+      "phone": "+91 98765 43210",
+      "role": "SUPPLIER",
+      "supplierId": "sup-001",
+      "createdAt": "2026-08-28T22:02:54.623Z"
+    },
+    {
+      "id": "usr-sup-002",
+      "email": "biopharma@tradecapital.com",
+      "passwordHash": "131316791c719256337795e84a2746a8c7027dd0ab30a789bd193722685d8525689c134723c3aa88d295e4b078f57f9c63a569d656fe652719e56fb61d9a1c0c",
+      "salt": "fda8063bf9fcaa800d72dd1fbcd634fb",
+      "name": "Dr. Ananya Roy",
+      "role": "SUPPLIER",
+      "supplierId": "sup-002",
+      "createdAt": "2026-08-28T22:02:54.634Z"
+    },
+    {
+      "id": "usr-sup-003",
+      "email": "techfab@tradecapital.com",
+      "passwordHash": "63afb5a3007200cda1cadbaef63fddbc6e7d5a4fd8c16c540e42f5f42218c91e7631bb7f6013251395c18f564c742b7c58d8875288695242bc2fecdfa8c68499",
+      "salt": "2c32f2a079d15b9623b48aa4d3aad7fb",
+      "name": "Vikram Mehta",
+      "role": "SUPPLIER",
+      "supplierId": "sup-003",
+      "createdAt": "2026-08-28T22:02:54.640Z"
+    },
+    {
+      "id": "usr-mtdi0b4l",
+      "email": "new.supplier.1787954605650@precisiongear.com",
+      "passwordHash": "5413cb7e01c7df5cce910b30e6f8a7f687bcbe32231743ab1703c9e6334ed3eec6e141b1538b9aa2d607352ef74f8b33acc1c6eafdc987c6896323e351ede32d",
+      "salt": "112532c5ddd57cd833df991a73d89087",
+      "name": "Vikramaditya Rao",
+      "phone": "+91 99887 76655",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdi0b4f",
+      "createdAt": "2026-08-28T22:03:25.653Z"
+    },
+    {
+      "id": "usr-mtdi279e",
+      "email": "new.supplier.1787954693946@precisiongear.com",
+      "passwordHash": "bd496527c47a788ea9d35073db26f888992c90fc882e1475743c3c2db334fcdfba3d56b2289cf3fccec3fe8ac675f9313c2b59f2e398c7d53e41c96ef9501be2",
+      "salt": "f4be156c38f9666805fba5fa497f6b96",
+      "name": "Vikramaditya Rao",
+      "phone": "+91 99887 76655",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdi2797",
+      "createdAt": "2026-08-28T22:04:53.954Z"
+    },
+    {
+      "id": "usr-mtdic3wn",
+      "email": "surendar05.senthil@gmail.com",
+      "passwordHash": "a1978b73ee489f1d29e294f4008d8f4eea86fd9d4c61ee8ff6a5edd8da1d9e5f8777359fb973e6c3db7e3a57e5069a779501de6c307d06a80bc8b117b0b5c0af",
+      "salt": "1a2f02bc4901f1c31d45b894eeaff2d8",
+      "name": "Dhoni",
+      "phone": "9876543210",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdic3w5",
+      "createdAt": "2026-08-28T22:12:36.167Z"
+    },
+    {
+      "id": "usr-mtdilm7z",
+      "email": "supplier.1787955599800@titanmachining.com",
+      "passwordHash": "58ddfdbaceeb90682b4ff3ded75cdb13dcec0bf358cba3db59d1f8db16b53d422d3c4ea568fc967483a282cd09b9aedc5b2866c53ccd874cfce8f547388794c5",
+      "salt": "97c3feaec1d0b63dd1275f5b306693fe",
+      "name": "Harish Kalyan",
+      "phone": "+91 98450 12345",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdilm7s",
+      "createdAt": "2026-08-28T22:19:59.807Z"
+    },
+    {
+      "id": "usr-mtdjij3m",
+      "email": "anil.1787957135407@newhorizon.com",
+      "passwordHash": "4680dfb9ffec426a38a8babc4588deaa8ae4f2c72479304dddcc93d8f31f984ac75d31b4e1a1a5f0cdc2e20df2a63a846c8b1f26b53e58a5cdfab9d8e3bdb5e9",
+      "salt": "d436b68a2036f264cbcddb3f6a6dc514",
+      "name": "Anil Kumar",
+      "phone": "",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdjij3h",
+      "createdAt": "2026-08-28T22:45:35.410Z"
+    },
+    {
+      "id": "usr-mtdjookl",
+      "email": "anil.1787957422437@newhorizon.com",
+      "passwordHash": "ca01cb21a1ac64d913e7826c8d91c2ec724b9e26a4f6e2f5cb6ec4a7d8f494ee2339d074b97f600ce0209c6e45fb8659f1834b1b28e19df293582d2e118f9530",
+      "salt": "2b37bc3857feb4fd7494ec14258d454e",
+      "name": "Anil Kumar",
+      "phone": "",
+      "role": "SUPPLIER",
+      "supplierId": "sup-mtdjooki",
+      "createdAt": "2026-08-28T22:50:22.437Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup-001",
+      "name": "Apex Precision Engineering Ltd",
+      "industry": "Automotive Components & Tooling",
+      "gstin": "27AAACA1234F1Z8",
+      "annualTurnoverLakhs": 480,
+      "completedDeals": 35,
+      "creditScore": 785,
+      "defaultRatePercent": 0,
+      "ratingGrade": "A+"
+    },
+    {
+      "id": "sup-002",
+      "name": "BioPharma Life Solutions Pvt Ltd",
+      "industry": "Pharmaceutical Packaging",
+      "gstin": "29AABCB5678G2Z1",
+      "annualTurnoverLakhs": 320,
+      "completedDeals": 19,
+      "creditScore": 745,
+      "defaultRatePercent": 0,
+      "ratingGrade": "A"
+    },
+    {
+      "id": "sup-003",
+      "name": "TechFab Microelectronics",
+      "industry": "Electronic Assemblies & PCBs",
+      "gstin": "33AABCT9012H3Z4",
+      "annualTurnoverLakhs": 650,
+      "completedDeals": 48,
+      "creditScore": 810,
+      "defaultRatePercent": 0,
+      "ratingGrade": "AA"
+    },
+    {
+      "id": "sup-004",
+      "name": "AgroPure Essentials",
+      "industry": "FMCG & Food Processing",
+      "gstin": "07AACCA3456J4Z7",
+      "annualTurnoverLakhs": 180,
+      "completedDeals": 8,
+      "creditScore": 680,
+      "defaultRatePercent": 1.2,
+      "ratingGrade": "BBB"
+    },
+    {
+      "id": "sup-005",
+      "name": "UrbanCraft Textiles",
+      "industry": "Garment & Industrial Fabrics",
+      "gstin": "24AAACU7890K5Z9",
+      "annualTurnoverLakhs": 210,
+      "completedDeals": 12,
+      "creditScore": 695,
+      "defaultRatePercent": 0.8,
+      "ratingGrade": "BBB+"
+    }
+  ],
+  "buyers": [
+    {
+      "id": "buy-001",
+      "name": "Global Motors India Corp",
+      "industry": "Automotive OEM",
+      "gstin": "27AAACG9876E1Z5",
+      "rating": "AAA",
+      "ratingScore": 96,
+      "avgPaymentDays": 45,
+      "disputeRatePercent": 0.1
+    },
+    {
+      "id": "buy-002",
+      "name": "MegaRetail Marts India Ltd",
+      "industry": "Supermarket & FMCG Retail",
+      "gstin": "29AABCM5432D2Z3",
+      "rating": "AA",
+      "ratingScore": 89,
+      "avgPaymentDays": 52,
+      "disputeRatePercent": 0.4
+    },
+    {
+      "id": "buy-003",
+      "name": "AutoTech Dynamics Global",
+      "industry": "Heavy Vehicle Manufacturing",
+      "gstin": "33AACCA8765C3Z2",
+      "rating": "A",
+      "ratingScore": 82,
+      "avgPaymentDays": 60,
+      "disputeRatePercent": 1.1
+    },
+    {
+      "id": "buy-004",
+      "name": "NovaTech Systems Infra",
+      "industry": "Telecom Infrastructure",
+      "gstin": "07AAACN2109B4Z6",
+      "rating": "BBB",
+      "ratingScore": 68,
+      "avgPaymentDays": 78,
+      "disputeRatePercent": 3.5
+    }
+  ],
+  "providers": [
+    {
+      "id": "prov-001",
+      "name": "National Apex Bank",
+      "type": "BANK",
+      "totalFundSizeLakhs": 600,
+      "availableLiquidityLakhs": 450,
+      "deployedCapitalLakhs": 150,
+      "riskAppetite": "CONSERVATIVE",
+      "minAcceptableRiskScore": 80,
+      "maxTenorDays": 90,
+      "maxAdvanceRate": 0.7,
+      "baseInterestRatePercent": 9,
+      "originationFeePercent": 0.5,
+      "settlementSpeedHours": 72,
+      "maxExposurePerBuyerLakhs": 100,
+      "buyerExposures": {
+        "buy-001": 35,
+        "buy-002": 40,
+        "buy-003": 20,
+        "buy-004": 0
+      },
+      "autoBidEnabled": true
+    },
+    {
+      "id": "prov-002",
+      "name": "Swift Growth Capital NBFC",
+      "type": "NBFC",
+      "totalFundSizeLakhs": 400,
+      "availableLiquidityLakhs": 320,
+      "deployedCapitalLakhs": 80,
+      "riskAppetite": "MODERATE",
+      "minAcceptableRiskScore": 65,
+      "maxTenorDays": 120,
+      "maxAdvanceRate": 0.9,
+      "baseInterestRatePercent": 11.5,
+      "originationFeePercent": 0.2,
+      "settlementSpeedHours": 2,
+      "maxExposurePerBuyerLakhs": 80,
+      "buyerExposures": {
+        "buy-001": 25,
+        "buy-002": 15,
+        "buy-003": 10,
+        "buy-004": 5
+      },
+      "autoBidEnabled": true
+    },
+    {
+      "id": "prov-003",
+      "name": "Sovereign Supply Credit Fund",
+      "type": "PRIVATE_CREDIT",
+      "totalFundSizeLakhs": 500,
+      "availableLiquidityLakhs": 380,
+      "deployedCapitalLakhs": 120,
+      "riskAppetite": "MODERATE",
+      "minAcceptableRiskScore": 70,
+      "maxTenorDays": 150,
+      "maxAdvanceRate": 0.8,
+      "baseInterestRatePercent": 10.2,
+      "originationFeePercent": 0.35,
+      "settlementSpeedHours": 24,
+      "maxExposurePerBuyerLakhs": 90,
+      "buyerExposures": {
+        "buy-001": 30,
+        "buy-002": 20,
+        "buy-003": 30,
+        "buy-004": 0
+      },
+      "autoBidEnabled": true
+    },
+    {
+      "id": "prov-004",
+      "name": "Velocity FinTech Liquidity Pool",
+      "type": "FINTECH",
+      "totalFundSizeLakhs": 250,
+      "availableLiquidityLakhs": 166.35,
+      "deployedCapitalLakhs": 84,
+      "riskAppetite": "AGGRESSIVE",
+      "minAcceptableRiskScore": 50,
+      "maxTenorDays": 60,
+      "maxAdvanceRate": 0.95,
+      "baseInterestRatePercent": 13.2,
+      "originationFeePercent": 0.15,
+      "settlementSpeedHours": 1,
+      "maxExposurePerBuyerLakhs": 50,
+      "buyerExposures": {
+        "buy-001": 30,
+        "buy-002": 15,
+        "buy-003": 10,
+        "buy-004": 15
+      },
+      "autoBidEnabled": true
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-mtdn002z",
+      "invoiceNumber": "INV-2026-0817",
+      "supplierId": "sup-mtdic3w5",
+      "buyerId": "buy-001",
+      "amountLakhs": 20,
+      "minRequiredAmountLakhs": 16,
+      "issueDate": "2026-08-17",
+      "dueDate": "2026-10-16",
+      "tenorDays": 60,
+      "goodsDescription": "Supply Chain Consignment Parts",
+      "eWayBillNumber": "",
+      "purchaseOrderNumber": "",
+      "status": "SETTLEMENT_PENDING",
+      "verificationResult": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 100,
+        "buyerAcknowledged": false,
+        "flags": [],
+        "explanation": "Scanned from document",
+        "verifiedAt": "2026-08-29T00:23:09.418Z"
+      },
+      "documentUrl": "/uploads/1787962989384-Sample_Valid_Invoice_TradeCapital.pdf",
+      "preferences": {
+        "urgencyLevel": "CRITICAL",
+        "targetAdvanceRate": 0.8,
+        "maxAcceptableRate": 15,
+        "priorityWeights": {
+          "advanceRate": 0.35,
+          "settlementSpeed": 0.3,
+          "interestRate": 0.2,
+          "fees": 0.1,
+          "tenorFlexibility": 0.05
+        }
+      },
+      "createdAt": "2026-08-29T00:23:09.419Z",
+      "riskAssessment": {
+        "compositeScore": 50,
+        "riskScore": 50,
+        "riskBand": "HIGH",
+        "riskConfidence": "LOW",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✕ Supplier entity unprofiled - baseline score applied",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✕ Missing Purchase Order reference"
+        ],
+        "riskTier": "TIER_3_HIGH_RISK",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 50,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 40,
+        "recommendedMaxAdvance": 0.65,
+        "recommendedBaseRate": 13.8,
+        "explanation": "Composite Risk Score: 50/100 [Band: HIGH, Grade: TIER_3_HIGH_RISK, Confidence: LOW]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 50/100, Tenor Duration: 60d, Uncertainty Penalty: -40 pts.",
+        "assessedAt": "2026-08-29T00:23:28.559Z"
+      },
+      "matches": [
+        {
+          "provider": {
+            "id": "prov-001",
+            "name": "National Apex Bank",
+            "type": "BANK",
+            "totalFundSizeLakhs": 600,
+            "availableLiquidityLakhs": 450,
+            "deployedCapitalLakhs": 150,
+            "riskAppetite": "CONSERVATIVE",
+            "minAcceptableRiskScore": 80,
+            "maxTenorDays": 90,
+            "maxAdvanceRate": 0.7,
+            "baseInterestRatePercent": 9,
+            "originationFeePercent": 0.5,
+            "settlementSpeedHours": 72,
+            "maxExposurePerBuyerLakhs": 100,
+            "buyerExposures": {
+              "buy-001": 35,
+              "buy-002": 40,
+              "buy-003": 20,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's CONSERVATIVE mandate minimum (80/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-002",
+            "name": "Swift Growth Capital NBFC",
+            "type": "NBFC",
+            "totalFundSizeLakhs": 400,
+            "availableLiquidityLakhs": 320,
+            "deployedCapitalLakhs": 80,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 65,
+            "maxTenorDays": 120,
+            "maxAdvanceRate": 0.9,
+            "baseInterestRatePercent": 11.5,
+            "originationFeePercent": 0.2,
+            "settlementSpeedHours": 2,
+            "maxExposurePerBuyerLakhs": 80,
+            "buyerExposures": {
+              "buy-001": 25,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 5
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's MODERATE mandate minimum (65/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-003",
+            "name": "Sovereign Supply Credit Fund",
+            "type": "PRIVATE_CREDIT",
+            "totalFundSizeLakhs": 500,
+            "availableLiquidityLakhs": 380,
+            "deployedCapitalLakhs": 120,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 70,
+            "maxTenorDays": 150,
+            "maxAdvanceRate": 0.8,
+            "baseInterestRatePercent": 10.2,
+            "originationFeePercent": 0.35,
+            "settlementSpeedHours": 24,
+            "maxExposurePerBuyerLakhs": 90,
+            "buyerExposures": {
+              "buy-001": 30,
+              "buy-002": 20,
+              "buy-003": 30,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's MODERATE mandate minimum (70/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-004",
+            "name": "Velocity FinTech Liquidity Pool",
+            "type": "FINTECH",
+            "totalFundSizeLakhs": 250,
+            "availableLiquidityLakhs": 180.35,
+            "deployedCapitalLakhs": 70,
+            "riskAppetite": "AGGRESSIVE",
+            "minAcceptableRiskScore": 50,
+            "maxTenorDays": 60,
+            "maxAdvanceRate": 0.95,
+            "baseInterestRatePercent": 13.2,
+            "originationFeePercent": 0.15,
+            "settlementSpeedHours": 1,
+            "maxExposurePerBuyerLakhs": 50,
+            "buyerExposures": {
+              "buy-001": 10,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 15
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 50/100 meets AGGRESSIVE appetite (min 50)",
+            "✓ Liquidity verified: ₹180.35L available (Requires ₹16.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 60 days",
+            "✓ Buyer exposure within limit: Projected ₹30L / ₹50L cap"
+          ],
+          "suitabilityScore": 80
+        }
+      ],
+      "matchedProviderId": "prov-004",
+      "matchedOfferId": "off-prov-004-inv-mtdn002z-mtdn0lx0",
+      "matchedAmountLakhs": 14,
+      "matchedAt": "2026-08-29T00:23:37.726Z",
+      "financingInitiatedAt": "2026-08-29T00:23:42.901Z",
+      "financedAmountLakhs": 14,
+      "financedAt": "2026-08-29T00:23:47.916Z",
+      "settlementStatus": "PENDING"
+    },
+    {
+      "id": "inv-mtdma5pa",
+      "invoiceNumber": "INV-2026-0817",
+      "supplierId": "sup-mtdic3w5",
+      "buyerId": "buy-001",
+      "amountLakhs": 20,
+      "minRequiredAmountLakhs": 16,
+      "issueDate": "2026-08-17",
+      "dueDate": "2026-10-16",
+      "tenorDays": 60,
+      "goodsDescription": "Supply Chain Consignment Parts",
+      "eWayBillNumber": "",
+      "purchaseOrderNumber": "",
+      "status": "SETTLED",
+      "verificationResult": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 100,
+        "buyerAcknowledged": false,
+        "flags": [],
+        "explanation": "Scanned from document",
+        "verifiedAt": "2026-08-29T00:03:03.646Z"
+      },
+      "documentUrl": "/uploads/1787961783612-Sample_Valid_Invoice_TradeCapital.pdf",
+      "preferences": {
+        "urgencyLevel": "CRITICAL",
+        "targetAdvanceRate": 0.8,
+        "maxAcceptableRate": 15,
+        "priorityWeights": {
+          "advanceRate": 0.35,
+          "settlementSpeed": 0.3,
+          "interestRate": 0.2,
+          "fees": 0.1,
+          "tenorFlexibility": 0.05
+        }
+      },
+      "createdAt": "2026-08-29T00:03:03.646Z",
+      "riskAssessment": {
+        "compositeScore": 50,
+        "riskScore": 50,
+        "riskBand": "HIGH",
+        "riskConfidence": "LOW",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✕ Supplier entity unprofiled - baseline score applied",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✕ Missing Purchase Order reference"
+        ],
+        "riskTier": "TIER_3_HIGH_RISK",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 50,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 40,
+        "recommendedMaxAdvance": 0.65,
+        "recommendedBaseRate": 13.8,
+        "explanation": "Composite Risk Score: 50/100 [Band: HIGH, Grade: TIER_3_HIGH_RISK, Confidence: LOW]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 50/100, Tenor Duration: 60d, Uncertainty Penalty: -40 pts.",
+        "assessedAt": "2026-08-29T00:03:45.748Z"
+      },
+      "matches": [
+        {
+          "provider": {
+            "id": "prov-001",
+            "name": "National Apex Bank",
+            "type": "BANK",
+            "totalFundSizeLakhs": 600,
+            "availableLiquidityLakhs": 450,
+            "deployedCapitalLakhs": 150,
+            "riskAppetite": "CONSERVATIVE",
+            "minAcceptableRiskScore": 80,
+            "maxTenorDays": 90,
+            "maxAdvanceRate": 0.7,
+            "baseInterestRatePercent": 9,
+            "originationFeePercent": 0.5,
+            "settlementSpeedHours": 72,
+            "maxExposurePerBuyerLakhs": 100,
+            "buyerExposures": {
+              "buy-001": 35,
+              "buy-002": 40,
+              "buy-003": 20,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's CONSERVATIVE mandate minimum (80/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-002",
+            "name": "Swift Growth Capital NBFC",
+            "type": "NBFC",
+            "totalFundSizeLakhs": 400,
+            "availableLiquidityLakhs": 320,
+            "deployedCapitalLakhs": 80,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 65,
+            "maxTenorDays": 120,
+            "maxAdvanceRate": 0.9,
+            "baseInterestRatePercent": 11.5,
+            "originationFeePercent": 0.2,
+            "settlementSpeedHours": 2,
+            "maxExposurePerBuyerLakhs": 80,
+            "buyerExposures": {
+              "buy-001": 25,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 5
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's MODERATE mandate minimum (65/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-003",
+            "name": "Sovereign Supply Credit Fund",
+            "type": "PRIVATE_CREDIT",
+            "totalFundSizeLakhs": 500,
+            "availableLiquidityLakhs": 380,
+            "deployedCapitalLakhs": 120,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 70,
+            "maxTenorDays": 150,
+            "maxAdvanceRate": 0.8,
+            "baseInterestRatePercent": 10.2,
+            "originationFeePercent": 0.35,
+            "settlementSpeedHours": 24,
+            "maxExposurePerBuyerLakhs": 90,
+            "buyerExposures": {
+              "buy-001": 30,
+              "buy-002": 20,
+              "buy-003": 30,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": false,
+          "exclusionReason": "✕ Risk policy mismatch: Invoice score (50/100) is below provider's MODERATE mandate minimum (70/100)",
+          "suitabilityScore": 0
+        },
+        {
+          "provider": {
+            "id": "prov-004",
+            "name": "Velocity FinTech Liquidity Pool",
+            "type": "FINTECH",
+            "totalFundSizeLakhs": 250,
+            "availableLiquidityLakhs": 180,
+            "deployedCapitalLakhs": 70,
+            "riskAppetite": "AGGRESSIVE",
+            "minAcceptableRiskScore": 50,
+            "maxTenorDays": 60,
+            "maxAdvanceRate": 0.95,
+            "baseInterestRatePercent": 13.2,
+            "originationFeePercent": 0.15,
+            "settlementSpeedHours": 1,
+            "maxExposurePerBuyerLakhs": 50,
+            "buyerExposures": {
+              "buy-001": 10,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 15
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 50/100 meets AGGRESSIVE appetite (min 50)",
+            "✓ Liquidity verified: ₹180L available (Requires ₹16.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 60 days",
+            "✓ Buyer exposure within limit: Projected ₹30L / ₹50L cap"
+          ],
+          "suitabilityScore": 80
+        }
+      ],
+      "matchedProviderId": "prov-004",
+      "matchedOfferId": "off-prov-004-inv-mtdma5pa-mtdmb3bs",
+      "matchedAmountLakhs": 14,
+      "matchedAt": "2026-08-29T00:03:47.232Z",
+      "financingInitiatedAt": "2026-08-29T00:03:47.967Z",
+      "financedAmountLakhs": 14,
+      "financedAt": "2026-08-29T00:03:49.082Z",
+      "settlementStatus": "SETTLED",
+      "settledAt": "2026-08-29T00:03:55.877Z",
+      "settledAmountLakhs": 20
+    },
+    {
+      "id": "inv-demo-20l",
+      "invoiceNumber": "INV-2026-APEX-001",
+      "supplierId": "sup-001",
+      "buyerId": "buy-001",
+      "amountLakhs": 20,
+      "minRequiredAmountLakhs": 16,
+      "issueDate": "2026-08-15",
+      "dueDate": "2026-10-15",
+      "tenorDays": 60,
+      "goodsDescription": "CNC Machined Transmission Housings (Batch #8942)",
+      "eWayBillNumber": "EWB-271988421094",
+      "purchaseOrderNumber": "PO-GM-2026-9921",
+      "status": "OFFERS_RECEIVED",
+      "preferences": {
+        "urgencyLevel": "CRITICAL",
+        "targetAdvanceRate": 0.85,
+        "maxAcceptableRate": 14,
+        "priorityWeights": {
+          "advanceRate": 0.35,
+          "settlementSpeed": 0.3,
+          "interestRate": 0.2,
+          "fees": 0.1,
+          "tenorFlexibility": 0.05
+        }
+      },
+      "createdAt": "2026-08-28T22:46:47.121Z",
+      "verificationResult": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 95,
+        "buyerAcknowledged": true,
+        "flags": [],
+        "explanation": "Invoice passed electronic 3-way reconciliation (GSTIN active, verified eWay bill, matching PO).",
+        "verifiedAt": "2026-08-29T00:24:50.427Z"
+      },
+      "riskAssessment": {
+        "compositeScore": 81,
+        "riskScore": 81,
+        "riskBand": "LOW",
+        "riskConfidence": "HIGH",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✓ Proven supplier track record (35 deals completed, 0.0% default rate)",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✓ Verified Purchase Order attached (PO-GM-2026-9921)"
+        ],
+        "riskTier": "TIER_1_AAA",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 96,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 0,
+        "recommendedMaxAdvance": 0.9,
+        "recommendedBaseRate": 9,
+        "explanation": "Composite Risk Score: 81/100 [Band: LOW, Grade: TIER_1_AAA, Confidence: HIGH]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 96/100, Tenor Duration: 60d, Uncertainty Penalty: -0 pts.",
+        "assessedAt": "2026-08-29T00:24:50.428Z"
+      },
+      "matches": [
+        {
+          "provider": {
+            "id": "prov-001",
+            "name": "National Apex Bank",
+            "type": "BANK",
+            "totalFundSizeLakhs": 600,
+            "availableLiquidityLakhs": 450,
+            "deployedCapitalLakhs": 150,
+            "riskAppetite": "CONSERVATIVE",
+            "minAcceptableRiskScore": 80,
+            "maxTenorDays": 90,
+            "maxAdvanceRate": 0.7,
+            "baseInterestRatePercent": 9,
+            "originationFeePercent": 0.5,
+            "settlementSpeedHours": 72,
+            "maxExposurePerBuyerLakhs": 100,
+            "buyerExposures": {
+              "buy-001": 35,
+              "buy-002": 40,
+              "buy-003": 20,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 81/100 meets CONSERVATIVE appetite (min 80)",
+            "✓ Liquidity verified: ₹450L available (Requires ₹17.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 90 days",
+            "✓ Buyer exposure within limit: Projected ₹55L / ₹100L cap"
+          ],
+          "suitabilityScore": 81
+        },
+        {
+          "provider": {
+            "id": "prov-002",
+            "name": "Swift Growth Capital NBFC",
+            "type": "NBFC",
+            "totalFundSizeLakhs": 400,
+            "availableLiquidityLakhs": 320,
+            "deployedCapitalLakhs": 80,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 65,
+            "maxTenorDays": 120,
+            "maxAdvanceRate": 0.9,
+            "baseInterestRatePercent": 11.5,
+            "originationFeePercent": 0.2,
+            "settlementSpeedHours": 2,
+            "maxExposurePerBuyerLakhs": 80,
+            "buyerExposures": {
+              "buy-001": 25,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 5
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 81/100 meets MODERATE appetite (min 65)",
+            "✓ Liquidity verified: ₹320L available (Requires ₹17.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 120 days",
+            "✓ Buyer exposure within limit: Projected ₹45L / ₹80L cap"
+          ],
+          "suitabilityScore": 88
+        },
+        {
+          "provider": {
+            "id": "prov-003",
+            "name": "Sovereign Supply Credit Fund",
+            "type": "PRIVATE_CREDIT",
+            "totalFundSizeLakhs": 500,
+            "availableLiquidityLakhs": 380,
+            "deployedCapitalLakhs": 120,
+            "riskAppetite": "MODERATE",
+            "minAcceptableRiskScore": 70,
+            "maxTenorDays": 150,
+            "maxAdvanceRate": 0.8,
+            "baseInterestRatePercent": 10.2,
+            "originationFeePercent": 0.35,
+            "settlementSpeedHours": 24,
+            "maxExposurePerBuyerLakhs": 90,
+            "buyerExposures": {
+              "buy-001": 30,
+              "buy-002": 20,
+              "buy-003": 30,
+              "buy-004": 0
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 81/100 meets MODERATE appetite (min 70)",
+            "✓ Liquidity verified: ₹380L available (Requires ₹17.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 150 days",
+            "✓ Buyer exposure within limit: Projected ₹50L / ₹90L cap"
+          ],
+          "suitabilityScore": 86
+        },
+        {
+          "provider": {
+            "id": "prov-004",
+            "name": "Velocity FinTech Liquidity Pool",
+            "type": "FINTECH",
+            "totalFundSizeLakhs": 250,
+            "availableLiquidityLakhs": 166.35,
+            "deployedCapitalLakhs": 84,
+            "riskAppetite": "AGGRESSIVE",
+            "minAcceptableRiskScore": 50,
+            "maxTenorDays": 60,
+            "maxAdvanceRate": 0.95,
+            "baseInterestRatePercent": 13.2,
+            "originationFeePercent": 0.15,
+            "settlementSpeedHours": 1,
+            "maxExposurePerBuyerLakhs": 50,
+            "buyerExposures": {
+              "buy-001": 30,
+              "buy-002": 15,
+              "buy-003": 10,
+              "buy-004": 15
+            },
+            "autoBidEnabled": true
+          },
+          "isEligible": true,
+          "eligibilityReasons": [
+            "✓ Risk appetite matches: Score 81/100 meets AGGRESSIVE appetite (min 50)",
+            "✓ Liquidity verified: ₹166.35L available (Requires ₹17.0L)",
+            "✓ Tenor compliant: 60 days within max limit of 60 days",
+            "✓ Buyer exposure within limit: Projected ₹50L / ₹50L cap"
+          ],
+          "suitabilityScore": 96
+        }
+      ]
+    },
+    {
+      "id": "inv-fraud-002",
+      "invoiceNumber": "INV-2026-FAKE-002",
+      "supplierId": "sup-004",
+      "buyerId": "buy-002",
+      "amountLakhs": 15,
+      "minRequiredAmountLakhs": 10,
+      "issueDate": "2026-08-20",
+      "dueDate": "2026-09-20",
+      "tenorDays": 30,
+      "goodsDescription": "Bulk Organic Grains & Packaging Units",
+      "eWayBillNumber": "EWB-INVALID-00000",
+      "purchaseOrderNumber": "PO-FAKE-9999",
+      "status": "DRAFT",
+      "preferences": {
+        "urgencyLevel": "MEDIUM",
+        "targetAdvanceRate": 0.8,
+        "maxAcceptableRate": 12,
+        "priorityWeights": {
+          "interestRate": 0.4,
+          "advanceRate": 0.25,
+          "settlementSpeed": 0.15,
+          "fees": 0.1,
+          "tenorFlexibility": 0.1
+        }
+      },
+      "createdAt": "2026-08-28T22:46:47.122Z"
+    },
+    {
+      "id": "inv-risk-003",
+      "invoiceNumber": "INV-2026-HIGH-003",
+      "supplierId": "sup-005",
+      "buyerId": "buy-004",
+      "amountLakhs": 25,
+      "minRequiredAmountLakhs": 18,
+      "issueDate": "2026-08-10",
+      "dueDate": "2026-11-10",
+      "tenorDays": 90,
+      "goodsDescription": "Industrial Synthetic Tarpaulins & Cordage",
+      "eWayBillNumber": "EWB-249918274610",
+      "purchaseOrderNumber": "PO-NOVA-2026-4411",
+      "status": "DRAFT",
+      "preferences": {
+        "urgencyLevel": "LOW",
+        "targetAdvanceRate": 0.75,
+        "maxAcceptableRate": 16,
+        "priorityWeights": {
+          "interestRate": 0.45,
+          "fees": 0.2,
+          "advanceRate": 0.2,
+          "settlementSpeed": 0.1,
+          "tenorFlexibility": 0.05
+        }
+      },
+      "createdAt": "2026-08-28T22:46:47.122Z"
+    },
+    {
+      "id": "inv-large-004",
+      "invoiceNumber": "INV-2026-LARGE-004",
+      "supplierId": "sup-003",
+      "buyerId": "buy-001",
+      "amountLakhs": 85,
+      "minRequiredAmountLakhs": 60,
+      "issueDate": "2026-08-25",
+      "dueDate": "2026-11-25",
+      "tenorDays": 90,
+      "goodsDescription": "Automotive ECU Circuit Boards (12,000 units)",
+      "eWayBillNumber": "EWB-338877112233",
+      "purchaseOrderNumber": "PO-GM-2026-8800",
+      "status": "DRAFT",
+      "preferences": {
+        "urgencyLevel": "MEDIUM",
+        "targetAdvanceRate": 0.8,
+        "maxAcceptableRate": 11,
+        "priorityWeights": {
+          "interestRate": 0.35,
+          "advanceRate": 0.3,
+          "settlementSpeed": 0.15,
+          "fees": 0.1,
+          "tenorFlexibility": 0.1
+        }
+      },
+      "createdAt": "2026-08-28T22:46:47.122Z"
+    }
+  ],
+  "offersMap": {
+    "inv-demo-20l": [
+      {
+        "id": "off-prov-002-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-002",
+        "providerName": "Swift Growth Capital NBFC",
+        "providerType": "NBFC",
+        "offeredAdvanceRate": 0.9,
+        "offeredAmountLakhs": 18,
+        "interestRatePercent": 11.5,
+        "originationFeePercent": 0.2,
+        "feeAmountLakhs": 0.036,
+        "netDisbursedLakhs": 17.96,
+        "settlementSpeedHours": 2,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.376,
+        "effectiveAnnualYield": 12.7,
+        "utilityScore": 92,
+        "scoreBreakdown": {
+          "advanceScore": 100,
+          "speedScore": 95,
+          "rateScore": 74,
+          "feeScore": 88,
+          "tenorScore": 95
+        },
+        "rationale": "Swift Growth Capital NBFC generated autonomous bid: 90% advance (₹18L) @ 11.5% APR with 2h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": true,
+        "status": "ACCEPTED",
+        "generatedAt": "2026-08-29T00:24:50.428Z",
+        "rank": 1
+      },
+      {
+        "id": "off-prov-004-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.95,
+        "offeredAmountLakhs": 19,
+        "interestRatePercent": 13.2,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.029,
+        "netDisbursedLakhs": 18.97,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.441,
+        "effectiveAnnualYield": 14.1,
+        "utilityScore": 91,
+        "scoreBreakdown": {
+          "advanceScore": 100,
+          "speedScore": 100,
+          "rateScore": 61,
+          "feeScore": 94,
+          "tenorScore": 95
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 95% advance (₹19L) @ 13.2% APR with 1h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "REJECTED",
+        "generatedAt": "2026-08-29T00:24:50.428Z",
+        "rank": 2
+      },
+      {
+        "id": "off-prov-003-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-003",
+        "providerName": "Sovereign Supply Credit Fund",
+        "providerType": "PRIVATE_CREDIT",
+        "offeredAdvanceRate": 0.8,
+        "offeredAmountLakhs": 16,
+        "interestRatePercent": 10.2,
+        "originationFeePercent": 0.35,
+        "feeAmountLakhs": 0.056,
+        "netDisbursedLakhs": 15.94,
+        "settlementSpeedHours": 24,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.324,
+        "effectiveAnnualYield": 12.3,
+        "utilityScore": 83,
+        "scoreBreakdown": {
+          "advanceScore": 90,
+          "speedScore": 75,
+          "rateScore": 84,
+          "feeScore": 70,
+          "tenorScore": 95
+        },
+        "rationale": "Sovereign Supply Credit Fund generated autonomous bid: 80% advance (₹16L) @ 10.2% APR with 24h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "REJECTED",
+        "generatedAt": "2026-08-29T00:24:50.428Z",
+        "rank": 3
+      },
+      {
+        "id": "off-prov-001-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-001",
+        "providerName": "National Apex Bank",
+        "providerType": "BANK",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 9,
+        "originationFeePercent": 0.5,
+        "feeAmountLakhs": 0.07,
+        "netDisbursedLakhs": 13.93,
+        "settlementSpeedHours": 72,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.277,
+        "effectiveAnnualYield": 12,
+        "utilityScore": 62,
+        "scoreBreakdown": {
+          "advanceScore": 61,
+          "speedScore": 40,
+          "rateScore": 93,
+          "feeScore": 52,
+          "tenorScore": 95
+        },
+        "rationale": "National Apex Bank generated autonomous bid: 70% advance (₹14L) @ 9% APR with 72h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "REJECTED",
+        "generatedAt": "2026-08-29T00:24:50.428Z",
+        "rank": 4
+      }
+    ],
+    "inv-mtdma5pa": [
+      {
+        "id": "off-prov-004-inv-mtdma5pa-mtdmb3bs",
+        "invoiceId": "inv-mtdma5pa",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 15.4,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.021,
+        "netDisbursedLakhs": 13.98,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.375,
+        "effectiveAnnualYield": 16.3,
+        "utilityScore": 75,
+        "scoreBreakdown": {
+          "advanceScore": 61,
+          "speedScore": 100,
+          "rateScore": 45,
+          "feeScore": 94,
+          "tenorScore": 95
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 70% advance (₹14L) @ 15.4% APR with 1h settlement speed based on Tier [TIER_3_HIGH_RISK].",
+        "isSelected": true,
+        "status": "ACCEPTED",
+        "generatedAt": "2026-08-29T00:03:47.224Z",
+        "rank": 1
+      }
+    ],
+    "inv-mtdn002z": [
+      {
+        "id": "off-prov-004-inv-mtdn002z-mtdn0lx0",
+        "invoiceId": "inv-mtdn002z",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 15.4,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.021,
+        "netDisbursedLakhs": 13.98,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.375,
+        "effectiveAnnualYield": 16.3,
+        "utilityScore": 75,
+        "scoreBreakdown": {
+          "advanceScore": 61,
+          "speedScore": 100,
+          "rateScore": 45,
+          "feeScore": 94,
+          "tenorScore": 95
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 70% advance (₹14L) @ 15.4% APR with 1h settlement speed based on Tier [TIER_3_HIGH_RISK].",
+        "isSelected": true,
+        "status": "ACCEPTED",
+        "generatedAt": "2026-08-29T00:23:37.716Z",
+        "rank": 1
+      }
+    ]
+  },
+  "financingRecords": [
+    {
+      "id": "fin-inv-mtdn002z-mtdn0tsb",
+      "invoiceId": "inv-mtdn002z",
+      "offerId": "off-prov-004-inv-mtdn002z-mtdn0lx0",
+      "providerId": "prov-004",
+      "providerName": "Velocity FinTech Liquidity Pool",
+      "supplierId": "sup-001",
+      "supplierName": "Apex Precision Engineering Ltd",
+      "buyerId": "buy-001",
+      "buyerName": "Global Motors India Corp",
+      "faceValueLakhs": 20,
+      "disbursedAmountLakhs": 14,
+      "interestRatePercent": 15.4,
+      "originationFeeLakhs": 0.021,
+      "settlementSpeedHours": 1,
+      "disbursedAt": "2026-08-29T00:23:47.916Z",
+      "dueDate": "2026-10-16",
+      "expectedSettlementLakhs": 20,
+      "status": "ACTIVE_FINANCED"
+    },
+    {
+      "id": "fin-inv-mtdma5pa-mtdmb4re",
+      "invoiceId": "inv-mtdma5pa",
+      "offerId": "off-prov-004-inv-mtdma5pa-mtdmb3bs",
+      "providerId": "prov-004",
+      "providerName": "Velocity FinTech Liquidity Pool",
+      "supplierId": "sup-001",
+      "supplierName": "Apex Precision Engineering Ltd",
+      "buyerId": "buy-001",
+      "buyerName": "Global Motors India Corp",
+      "faceValueLakhs": 20,
+      "disbursedAmountLakhs": 14,
+      "interestRatePercent": 15.4,
+      "originationFeeLakhs": 0.021,
+      "settlementSpeedHours": 1,
+      "disbursedAt": "2026-08-29T00:03:49.082Z",
+      "dueDate": "2026-10-16",
+      "expectedSettlementLakhs": 20,
+      "status": "SETTLED_COMPLETED",
+      "actualSettledLakhs": 20,
+      "settledAt": "2026-08-29T00:03:55.876Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log-ver-1787963090428-r9wf",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Invoice [INV-2026-APEX-001] 3-way verification evaluated: PASSED (Score: 100/100).",
+      "details": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 95,
+        "buyerAcknowledged": true,
+        "flags": [],
+        "explanation": "Invoice passed electronic 3-way reconciliation (GSTIN active, verified eWay bill, matching PO).",
+        "verifiedAt": "2026-08-29T00:24:50.427Z"
+      }
+    },
+    {
+      "id": "log-risk-1787963090428-9h0f",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Risk assessment completed for INV-2026-APEX-001: LOW Risk [Tier TIER_1_AAA] (Score 81/100, Confidence: HIGH)",
+      "details": {
+        "compositeScore": 81,
+        "riskScore": 81,
+        "riskBand": "LOW",
+        "riskConfidence": "HIGH",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✓ Proven supplier track record (35 deals completed, 0.0% default rate)",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✓ Verified Purchase Order attached (PO-GM-2026-9921)"
+        ],
+        "riskTier": "TIER_1_AAA",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 96,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 0,
+        "recommendedMaxAdvance": 0.9,
+        "recommendedBaseRate": 9,
+        "explanation": "Composite Risk Score: 81/100 [Band: LOW, Grade: TIER_1_AAA, Confidence: HIGH]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 96/100, Tenor Duration: 60d, Uncertainty Penalty: -0 pts.",
+        "assessedAt": "2026-08-29T00:24:50.428Z"
+      }
+    },
+    {
+      "id": "log-match-1787963090428-kcvq",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] approved for underwriting bidding. Suitability: 81/100."
+    },
+    {
+      "id": "log-match-1787963090428-328s",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] approved for underwriting bidding. Suitability: 88/100."
+    },
+    {
+      "id": "log-match-1787963090428-zhj4",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] approved for underwriting bidding. Suitability: 86/100."
+    },
+    {
+      "id": "log-match-1787963090428-bmtq",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 96/100."
+    },
+    {
+      "id": "log-bid-1787963090428-wfdm",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "[National Apex Bank] submitted autonomous offer: ₹14L advance @ 9%, Speed 72h.",
+      "details": {
+        "id": "off-prov-001-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-001",
+        "providerName": "National Apex Bank",
+        "providerType": "BANK",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 9,
+        "originationFeePercent": 0.5,
+        "feeAmountLakhs": 0.07,
+        "netDisbursedLakhs": 13.93,
+        "settlementSpeedHours": 72,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.277,
+        "effectiveAnnualYield": 12,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "National Apex Bank generated autonomous bid: 70% advance (₹14L) @ 9% APR with 72h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:24:50.428Z"
+      }
+    },
+    {
+      "id": "log-bid-1787963090428-7fou",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "[Swift Growth Capital NBFC] submitted autonomous offer: ₹18L advance @ 11.5%, Speed 2h.",
+      "details": {
+        "id": "off-prov-002-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-002",
+        "providerName": "Swift Growth Capital NBFC",
+        "providerType": "NBFC",
+        "offeredAdvanceRate": 0.9,
+        "offeredAmountLakhs": 18,
+        "interestRatePercent": 11.5,
+        "originationFeePercent": 0.2,
+        "feeAmountLakhs": 0.036,
+        "netDisbursedLakhs": 17.96,
+        "settlementSpeedHours": 2,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.376,
+        "effectiveAnnualYield": 12.7,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Swift Growth Capital NBFC generated autonomous bid: 90% advance (₹18L) @ 11.5% APR with 2h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:24:50.428Z"
+      }
+    },
+    {
+      "id": "log-bid-1787963090428-pcrx",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "[Sovereign Supply Credit Fund] submitted autonomous offer: ₹16L advance @ 10.2%, Speed 24h.",
+      "details": {
+        "id": "off-prov-003-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-003",
+        "providerName": "Sovereign Supply Credit Fund",
+        "providerType": "PRIVATE_CREDIT",
+        "offeredAdvanceRate": 0.8,
+        "offeredAmountLakhs": 16,
+        "interestRatePercent": 10.2,
+        "originationFeePercent": 0.35,
+        "feeAmountLakhs": 0.056,
+        "netDisbursedLakhs": 15.94,
+        "settlementSpeedHours": 24,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.324,
+        "effectiveAnnualYield": 12.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Sovereign Supply Credit Fund generated autonomous bid: 80% advance (₹16L) @ 10.2% APR with 24h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:24:50.428Z"
+      }
+    },
+    {
+      "id": "log-bid-1787963090428-a05m",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹19L advance @ 13.2%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-demo-20l-mtdn260s",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.95,
+        "offeredAmountLakhs": 19,
+        "interestRatePercent": 13.2,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.029,
+        "netDisbursedLakhs": 18.97,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.441,
+        "effectiveAnnualYield": 14.1,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 95% advance (₹19L) @ 13.2% APR with 1h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:24:50.428Z"
+      }
+    },
+    {
+      "id": "log-eval-1787963090428-ye8s",
+      "timestamp": "2026-08-29T00:24:50.428Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Clearing completed: Swift Growth Capital NBFC awarded deal. Utility Score: 92/100.",
+      "details": {
+        "winningOfferId": "off-prov-002-inv-demo-20l-mtdn260s",
+        "utilityScore": 92,
+        "explanation": "🎯 Multi-Attribute Decision: [Swift Growth Capital NBFC] won with Utility Score 92/100. Even though [National Apex Bank] offered a lower interest rate (9% vs 11.5%), it was outscored because [Swift Growth Capital NBFC] delivered 90% advance (₹18L meeting urgent need ₹16L) and 2h T+0 speed, whereas [National Apex Bank] offered only 70% advance (₹14L) with a 72h delay."
+      }
+    },
+    {
+      "id": "log-fin-1787963027916-1",
+      "timestamp": "2026-08-29T00:23:47.916Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Financing executed: ₹14L disbursed to Apex Precision Engineering Ltd via Velocity FinTech Liquidity Pool escrow."
+    },
+    {
+      "id": "log-fin-1787963027916-2",
+      "timestamp": "2026-08-29T00:23:47.916Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "INFO",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] liquidity updated: Available ₹166.35L (Deployed: ₹84L). Buyer [Global Motors India Corp] exposure: ₹30L."
+    },
+    {
+      "id": "log-fin-init-1787963022901",
+      "timestamp": "2026-08-29T00:23:42.901Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Financing initiated: Deal [INV-2026-0817] approved for escrow disbursement by [Velocity FinTech Liquidity Pool]. Amount: ₹14L."
+    },
+    {
+      "id": "log-eval-1787963017722-l4qd",
+      "timestamp": "2026-08-29T00:23:37.722Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Clearing completed: Velocity FinTech Liquidity Pool awarded deal. Utility Score: 75/100.",
+      "details": {
+        "winningOfferId": "off-prov-004-inv-mtdn002z-mtdn0lx0",
+        "utilityScore": 75,
+        "explanation": "🎯 Multi-Attribute Decision: [Velocity FinTech Liquidity Pool] won with Utility Score 75/100, providing the best overall combination of pricing (15.4%), advance (70%), and settlement speed (1h)."
+      }
+    },
+    {
+      "id": "log-bid-1787963017716-zwjd",
+      "timestamp": "2026-08-29T00:23:37.716Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹14L advance @ 15.4%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-mtdn002z-mtdn0lx0",
+        "invoiceId": "inv-mtdn002z",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 15.4,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.021,
+        "netDisbursedLakhs": 13.98,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.375,
+        "effectiveAnnualYield": 16.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 70% advance (₹14L) @ 15.4% APR with 1h settlement speed based on Tier [TIER_3_HIGH_RISK].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:23:37.716Z"
+      }
+    },
+    {
+      "id": "log-match-1787963017706-0wek",
+      "timestamp": "2026-08-29T00:23:37.706Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] excluded: Deal risk score (50/100) below minimum mandate (80/100)."
+    },
+    {
+      "id": "log-match-1787963017706-zr25",
+      "timestamp": "2026-08-29T00:23:37.706Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] excluded: Deal risk score (50/100) below minimum mandate (65/100)."
+    },
+    {
+      "id": "log-match-1787963017706-xkxx",
+      "timestamp": "2026-08-29T00:23:37.706Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] excluded: Deal risk score (50/100) below minimum mandate (70/100)."
+    },
+    {
+      "id": "log-match-1787963017706-8d89",
+      "timestamp": "2026-08-29T00:23:37.706Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 80/100."
+    },
+    {
+      "id": "log-match-1787963008566-vreu",
+      "timestamp": "2026-08-29T00:23:28.566Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] excluded: Deal risk score (50/100) below minimum mandate (80/100)."
+    },
+    {
+      "id": "log-match-1787963008566-jcse",
+      "timestamp": "2026-08-29T00:23:28.566Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] excluded: Deal risk score (50/100) below minimum mandate (65/100)."
+    },
+    {
+      "id": "log-match-1787963008566-nqvn",
+      "timestamp": "2026-08-29T00:23:28.566Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] excluded: Deal risk score (50/100) below minimum mandate (70/100)."
+    },
+    {
+      "id": "log-match-1787963008566-3s5q",
+      "timestamp": "2026-08-29T00:23:28.566Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdn002z",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 80/100."
+    },
+    {
+      "id": "log-risk-1787963008559-lyvc",
+      "timestamp": "2026-08-29T00:23:28.559Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdn002z",
+      "message": "Risk assessment completed for INV-2026-0817: HIGH Risk [Tier TIER_3_HIGH_RISK] (Score 50/100, Confidence: LOW)",
+      "details": {
+        "compositeScore": 50,
+        "riskScore": 50,
+        "riskBand": "HIGH",
+        "riskConfidence": "LOW",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✕ Supplier entity unprofiled - baseline score applied",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✕ Missing Purchase Order reference"
+        ],
+        "riskTier": "TIER_3_HIGH_RISK",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 50,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 40,
+        "recommendedMaxAdvance": 0.65,
+        "recommendedBaseRate": 13.8,
+        "explanation": "Composite Risk Score: 50/100 [Band: HIGH, Grade: TIER_3_HIGH_RISK, Confidence: LOW]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 50/100, Tenor Duration: 60d, Uncertainty Penalty: -40 pts.",
+        "assessedAt": "2026-08-29T00:23:28.559Z"
+      }
+    },
+    {
+      "id": "log-inv-new-1787963001484",
+      "timestamp": "2026-08-29T00:23:21.484Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "INFO",
+      "invoiceId": "inv-mtdn002z",
+      "message": "Invoice [INV-2026-0817] formally submitted to the clearing market by supplier. Amount: ₹20L (Urgent requirement: ₹16L)."
+    },
+    {
+      "id": "log-scan-1787962989414",
+      "timestamp": "2026-08-29T00:23:09.414Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "SUCCESS",
+      "message": "Invoice document [Sample_Valid_Invoice_TradeCapital.pdf] scanned & verified: VERIFIED. Extracted Amount: ₹20,00,000, Supplier: Apex Precision Engineering Ltd, Buyer: Global Motors India Corp.",
+      "details": {
+        "filename": "Sample_Valid_Invoice_TradeCapital.pdf",
+        "verificationStatus": "VERIFIED",
+        "checklist": [
+          {
+            "key": "readable",
+            "label": "Invoice readable",
+            "passed": true,
+            "message": "Document text extracted successfully"
+          },
+          {
+            "key": "invoiceNumber",
+            "label": "Invoice number detected",
+            "passed": true,
+            "message": "Found INV-2026-0817"
+          },
+          {
+            "key": "supplier",
+            "label": "Supplier detected",
+            "passed": true,
+            "message": "Identified Apex Precision Engineering Ltd"
+          },
+          {
+            "key": "buyer",
+            "label": "Buyer detected",
+            "passed": true,
+            "message": "Identified Global Motors India Corp"
+          },
+          {
+            "key": "amount",
+            "label": "Invoice amount detected",
+            "passed": true,
+            "message": "Amount: ₹20,00,000"
+          },
+          {
+            "key": "invoiceDate",
+            "label": "Invoice date detected",
+            "passed": true,
+            "message": "Dated: 17-Aug-2026"
+          },
+          {
+            "key": "dueDate",
+            "label": "Due date / Tenor detected",
+            "passed": true,
+            "message": "Due: 16-Oct-2026"
+          }
+        ],
+        "extractedFields": {
+          "invoiceNumber": {
+            "value": "INV-2026-0817",
+            "rawText": "INV-2026-0817",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "supplierName": {
+            "value": "Apex Precision Engineering Ltd",
+            "rawText": "Apex Precision Engineering Ltd",
+            "status": "EXTRACTED",
+            "confidence": 0.98,
+            "matchedSupplierId": "sup-001",
+            "matchConfidence": 1
+          },
+          "buyerName": {
+            "value": "Global Motors India Corp",
+            "rawText": "Global Motors India Corp",
+            "status": "EXTRACTED",
+            "confidence": 0.98,
+            "matchedBuyerId": "buy-001",
+            "matchConfidence": 1
+          },
+          "invoiceAmount": {
+            "value": 2000000,
+            "amountLakhs": 20,
+            "formatted": "₹20,00,000",
+            "rawText": "TOTAL INVOICE VALUE   Rs. 20,00,000",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "currency": {
+            "value": "INR",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "invoiceDate": {
+            "value": "2026-08-17",
+            "formatted": "17-Aug-2026",
+            "rawText": "Invoice Date   17-Aug-2026",
+            "status": "EXTRACTED",
+            "confidence": 0.9
+          },
+          "dueDate": {
+            "value": "2026-10-16",
+            "formatted": "16-Oct-2026",
+            "rawText": "Due Date   16-Oct-2026",
+            "status": "EXTRACTED",
+            "confidence": 0.9
+          },
+          "paymentTerms": {
+            "value": "Net 60",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "tenorDays": {
+            "value": 60,
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "purchaseOrderNumber": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          },
+          "eWayBillNumber": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          },
+          "goodsDescription": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "log-ver-1787961945610-aysw",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Invoice [INV-2026-APEX-001] 3-way verification evaluated: PASSED (Score: 100/100).",
+      "details": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 95,
+        "buyerAcknowledged": true,
+        "flags": [],
+        "explanation": "Invoice passed electronic 3-way reconciliation (GSTIN active, verified eWay bill, matching PO).",
+        "verifiedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-risk-1787961945610-zn54",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Risk assessment completed for INV-2026-APEX-001: LOW Risk [Tier TIER_1_AAA] (Score 81/100, Confidence: HIGH)",
+      "details": {
+        "compositeScore": 81,
+        "riskScore": 81,
+        "riskBand": "LOW",
+        "riskConfidence": "HIGH",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✓ Proven supplier track record (35 deals completed, 0.0% default rate)",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✓ Verified Purchase Order attached (PO-GM-2026-9921)"
+        ],
+        "riskTier": "TIER_1_AAA",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 96,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 0,
+        "recommendedMaxAdvance": 0.9,
+        "recommendedBaseRate": 9,
+        "explanation": "Composite Risk Score: 81/100 [Band: LOW, Grade: TIER_1_AAA, Confidence: HIGH]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 96/100, Tenor Duration: 60d, Uncertainty Penalty: -0 pts.",
+        "assessedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-match-1787961945610-2j0c",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] approved for underwriting bidding. Suitability: 81/100."
+    },
+    {
+      "id": "log-match-1787961945610-e2kg",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] approved for underwriting bidding. Suitability: 88/100."
+    },
+    {
+      "id": "log-match-1787961945610-77va",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] approved for underwriting bidding. Suitability: 86/100."
+    },
+    {
+      "id": "log-match-1787961945610-5jmz",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 96/100."
+    },
+    {
+      "id": "log-bid-1787961945610-x87j",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "[National Apex Bank] submitted autonomous offer: ₹14L advance @ 9%, Speed 72h.",
+      "details": {
+        "id": "off-prov-001-inv-demo-20l-mtdmdmoa",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-001",
+        "providerName": "National Apex Bank",
+        "providerType": "BANK",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 9,
+        "originationFeePercent": 0.5,
+        "feeAmountLakhs": 0.07,
+        "netDisbursedLakhs": 13.93,
+        "settlementSpeedHours": 72,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.277,
+        "effectiveAnnualYield": 12,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "National Apex Bank generated autonomous bid: 70% advance (₹14L) @ 9% APR with 72h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961945610-mgeq",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "[Swift Growth Capital NBFC] submitted autonomous offer: ₹18L advance @ 11.5%, Speed 2h.",
+      "details": {
+        "id": "off-prov-002-inv-demo-20l-mtdmdmoa",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-002",
+        "providerName": "Swift Growth Capital NBFC",
+        "providerType": "NBFC",
+        "offeredAdvanceRate": 0.9,
+        "offeredAmountLakhs": 18,
+        "interestRatePercent": 11.5,
+        "originationFeePercent": 0.2,
+        "feeAmountLakhs": 0.036,
+        "netDisbursedLakhs": 17.96,
+        "settlementSpeedHours": 2,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.376,
+        "effectiveAnnualYield": 12.7,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Swift Growth Capital NBFC generated autonomous bid: 90% advance (₹18L) @ 11.5% APR with 2h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961945610-lbx1",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "[Sovereign Supply Credit Fund] submitted autonomous offer: ₹16L advance @ 10.2%, Speed 24h.",
+      "details": {
+        "id": "off-prov-003-inv-demo-20l-mtdmdmoa",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-003",
+        "providerName": "Sovereign Supply Credit Fund",
+        "providerType": "PRIVATE_CREDIT",
+        "offeredAdvanceRate": 0.8,
+        "offeredAmountLakhs": 16,
+        "interestRatePercent": 10.2,
+        "originationFeePercent": 0.35,
+        "feeAmountLakhs": 0.056,
+        "netDisbursedLakhs": 15.94,
+        "settlementSpeedHours": 24,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.324,
+        "effectiveAnnualYield": 12.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Sovereign Supply Credit Fund generated autonomous bid: 80% advance (₹16L) @ 10.2% APR with 24h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961945610-euwl",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹19L advance @ 13.2%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-demo-20l-mtdmdmoa",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.95,
+        "offeredAmountLakhs": 19,
+        "interestRatePercent": 13.2,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.029,
+        "netDisbursedLakhs": 18.97,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.441,
+        "effectiveAnnualYield": 14.1,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 95% advance (₹19L) @ 13.2% APR with 1h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:45.610Z"
+      }
+    },
+    {
+      "id": "log-eval-1787961945610-ufm4",
+      "timestamp": "2026-08-29T00:05:45.610Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Clearing completed: Swift Growth Capital NBFC awarded deal. Utility Score: 92/100.",
+      "details": {
+        "winningOfferId": "off-prov-002-inv-demo-20l-mtdmdmoa",
+        "utilityScore": 92,
+        "explanation": "🎯 Multi-Attribute Decision: [Swift Growth Capital NBFC] won with Utility Score 92/100. Even though [National Apex Bank] offered a lower interest rate (9% vs 11.5%), it was outscored because [Swift Growth Capital NBFC] delivered 90% advance (₹18L meeting urgent need ₹16L) and 2h T+0 speed, whereas [National Apex Bank] offered only 70% advance (₹14L) with a 72h delay."
+      }
+    },
+    {
+      "id": "log-ver-1787961919578-vpes",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Invoice [INV-2026-APEX-001] 3-way verification evaluated: PASSED (Score: 100/100).",
+      "details": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 95,
+        "buyerAcknowledged": true,
+        "flags": [],
+        "explanation": "Invoice passed electronic 3-way reconciliation (GSTIN active, verified eWay bill, matching PO).",
+        "verifiedAt": "2026-08-29T00:05:19.578Z"
+      }
+    },
+    {
+      "id": "log-risk-1787961919578-51pv",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Risk assessment completed for INV-2026-APEX-001: LOW Risk [Tier TIER_1_AAA] (Score 81/100, Confidence: HIGH)",
+      "details": {
+        "compositeScore": 81,
+        "riskScore": 81,
+        "riskBand": "LOW",
+        "riskConfidence": "HIGH",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✓ Proven supplier track record (35 deals completed, 0.0% default rate)",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✓ Verified Purchase Order attached (PO-GM-2026-9921)"
+        ],
+        "riskTier": "TIER_1_AAA",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 96,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 0,
+        "recommendedMaxAdvance": 0.9,
+        "recommendedBaseRate": 9,
+        "explanation": "Composite Risk Score: 81/100 [Band: LOW, Grade: TIER_1_AAA, Confidence: HIGH]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 96/100, Tenor Duration: 60d, Uncertainty Penalty: -0 pts.",
+        "assessedAt": "2026-08-29T00:05:19.578Z"
+      }
+    },
+    {
+      "id": "log-match-1787961919578-90sn",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] approved for underwriting bidding. Suitability: 81/100."
+    },
+    {
+      "id": "log-match-1787961919578-9wj6",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] approved for underwriting bidding. Suitability: 88/100."
+    },
+    {
+      "id": "log-match-1787961919578-r9ki",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] approved for underwriting bidding. Suitability: 86/100."
+    },
+    {
+      "id": "log-match-1787961919578-mr6i",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 96/100."
+    },
+    {
+      "id": "log-bid-1787961919578-bl0s",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "[National Apex Bank] submitted autonomous offer: ₹14L advance @ 9%, Speed 72h.",
+      "details": {
+        "id": "off-prov-001-inv-demo-20l-mtdmd2l6",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-001",
+        "providerName": "National Apex Bank",
+        "providerType": "BANK",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 9,
+        "originationFeePercent": 0.5,
+        "feeAmountLakhs": 0.07,
+        "netDisbursedLakhs": 13.93,
+        "settlementSpeedHours": 72,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.277,
+        "effectiveAnnualYield": 12,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "National Apex Bank generated autonomous bid: 70% advance (₹14L) @ 9% APR with 72h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:19.578Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961919578-dfs7",
+      "timestamp": "2026-08-29T00:05:19.578Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "[Swift Growth Capital NBFC] submitted autonomous offer: ₹18L advance @ 11.5%, Speed 2h.",
+      "details": {
+        "id": "off-prov-002-inv-demo-20l-mtdmd2l6",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-002",
+        "providerName": "Swift Growth Capital NBFC",
+        "providerType": "NBFC",
+        "offeredAdvanceRate": 0.9,
+        "offeredAmountLakhs": 18,
+        "interestRatePercent": 11.5,
+        "originationFeePercent": 0.2,
+        "feeAmountLakhs": 0.036,
+        "netDisbursedLakhs": 17.96,
+        "settlementSpeedHours": 2,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.376,
+        "effectiveAnnualYield": 12.7,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Swift Growth Capital NBFC generated autonomous bid: 90% advance (₹18L) @ 11.5% APR with 2h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:19.578Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961919579-w3cv",
+      "timestamp": "2026-08-29T00:05:19.579Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "[Sovereign Supply Credit Fund] submitted autonomous offer: ₹16L advance @ 10.2%, Speed 24h.",
+      "details": {
+        "id": "off-prov-003-inv-demo-20l-mtdmd2l7",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-003",
+        "providerName": "Sovereign Supply Credit Fund",
+        "providerType": "PRIVATE_CREDIT",
+        "offeredAdvanceRate": 0.8,
+        "offeredAmountLakhs": 16,
+        "interestRatePercent": 10.2,
+        "originationFeePercent": 0.35,
+        "feeAmountLakhs": 0.056,
+        "netDisbursedLakhs": 15.94,
+        "settlementSpeedHours": 24,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.324,
+        "effectiveAnnualYield": 12.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Sovereign Supply Credit Fund generated autonomous bid: 80% advance (₹16L) @ 10.2% APR with 24h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:19.579Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961919579-634f",
+      "timestamp": "2026-08-29T00:05:19.579Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹19L advance @ 13.2%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-demo-20l-mtdmd2l7",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.95,
+        "offeredAmountLakhs": 19,
+        "interestRatePercent": 13.2,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.029,
+        "netDisbursedLakhs": 18.97,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.441,
+        "effectiveAnnualYield": 14.1,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 95% advance (₹19L) @ 13.2% APR with 1h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:05:19.579Z"
+      }
+    },
+    {
+      "id": "log-eval-1787961919579-dqte",
+      "timestamp": "2026-08-29T00:05:19.579Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Clearing completed: Swift Growth Capital NBFC awarded deal. Utility Score: 92/100.",
+      "details": {
+        "winningOfferId": "off-prov-002-inv-demo-20l-mtdmd2l6",
+        "utilityScore": 92,
+        "explanation": "🎯 Multi-Attribute Decision: [Swift Growth Capital NBFC] won with Utility Score 92/100. Even though [National Apex Bank] offered a lower interest rate (9% vs 11.5%), it was outscored because [Swift Growth Capital NBFC] delivered 90% advance (₹18L meeting urgent need ₹16L) and 2h T+0 speed, whereas [National Apex Bank] offered only 70% advance (₹14L) with a 72h delay."
+      }
+    },
+    {
+      "id": "log-settle-done-1787961835876-1",
+      "timestamp": "2026-08-29T00:03:55.876Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Settlement confirmed: ₹20L received from Global Motors India Corp. Principal & yield disbursed to Velocity FinTech Liquidity Pool."
+    },
+    {
+      "id": "log-settle-done-1787961835876-2",
+      "timestamp": "2026-08-29T00:03:55.876Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Market rebalance: [Velocity FinTech Liquidity Pool] liquidity replenished to ₹180.35L (+₹14.35L return). Exposure on Global Motors India Corp released."
+    },
+    {
+      "id": "log-fin-1787961829082-1",
+      "timestamp": "2026-08-29T00:03:49.082Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Financing executed: ₹14L disbursed to Apex Precision Engineering Ltd via Velocity FinTech Liquidity Pool escrow."
+    },
+    {
+      "id": "log-fin-1787961829082-2",
+      "timestamp": "2026-08-29T00:03:49.082Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "INFO",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] liquidity updated: Available ₹166L (Deployed: ₹84L). Buyer [Global Motors India Corp] exposure: ₹30L."
+    },
+    {
+      "id": "log-fin-init-1787961827967",
+      "timestamp": "2026-08-29T00:03:47.967Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Financing initiated: Deal [INV-2026-0817] approved for escrow disbursement by [Velocity FinTech Liquidity Pool]. Amount: ₹14L."
+    },
+    {
+      "id": "log-eval-1787961827228-iy7k",
+      "timestamp": "2026-08-29T00:03:47.228Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Clearing completed: Velocity FinTech Liquidity Pool awarded deal. Utility Score: 75/100.",
+      "details": {
+        "winningOfferId": "off-prov-004-inv-mtdma5pa-mtdmb3bs",
+        "utilityScore": 75,
+        "explanation": "🎯 Multi-Attribute Decision: [Velocity FinTech Liquidity Pool] won with Utility Score 75/100, providing the best overall combination of pricing (15.4%), advance (70%), and settlement speed (1h)."
+      }
+    },
+    {
+      "id": "log-bid-1787961827224-ely7",
+      "timestamp": "2026-08-29T00:03:47.224Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹14L advance @ 15.4%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-mtdma5pa-mtdmb3bs",
+        "invoiceId": "inv-mtdma5pa",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 15.4,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.021,
+        "netDisbursedLakhs": 13.98,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.375,
+        "effectiveAnnualYield": 16.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 70% advance (₹14L) @ 15.4% APR with 1h settlement speed based on Tier [TIER_3_HIGH_RISK].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-29T00:03:47.224Z"
+      }
+    },
+    {
+      "id": "log-match-1787961827219-gndm",
+      "timestamp": "2026-08-29T00:03:47.219Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] excluded: Deal risk score (50/100) below minimum mandate (80/100)."
+    },
+    {
+      "id": "log-match-1787961827219-1705",
+      "timestamp": "2026-08-29T00:03:47.219Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] excluded: Deal risk score (50/100) below minimum mandate (65/100)."
+    },
+    {
+      "id": "log-match-1787961827219-u6iz",
+      "timestamp": "2026-08-29T00:03:47.219Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] excluded: Deal risk score (50/100) below minimum mandate (70/100)."
+    },
+    {
+      "id": "log-match-1787961827219-gfnd",
+      "timestamp": "2026-08-29T00:03:47.219Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 80/100."
+    },
+    {
+      "id": "log-match-1787961825757-tjy1",
+      "timestamp": "2026-08-29T00:03:45.757Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] excluded: Deal risk score (50/100) below minimum mandate (80/100)."
+    },
+    {
+      "id": "log-match-1787961825757-ac6i",
+      "timestamp": "2026-08-29T00:03:45.757Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] excluded: Deal risk score (50/100) below minimum mandate (65/100)."
+    },
+    {
+      "id": "log-match-1787961825757-gb43",
+      "timestamp": "2026-08-29T00:03:45.757Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "WARNING",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] excluded: Deal risk score (50/100) below minimum mandate (70/100)."
+    },
+    {
+      "id": "log-match-1787961825757-q7pq",
+      "timestamp": "2026-08-29T00:03:45.757Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdma5pa",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 80/100."
+    },
+    {
+      "id": "log-risk-1787961825748-ipx2",
+      "timestamp": "2026-08-29T00:03:45.748Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-mtdma5pa",
+      "message": "Risk assessment completed for INV-2026-0817: HIGH Risk [Tier TIER_3_HIGH_RISK] (Score 50/100, Confidence: LOW)",
+      "details": {
+        "compositeScore": 50,
+        "riskScore": 50,
+        "riskBand": "HIGH",
+        "riskConfidence": "LOW",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✕ Supplier entity unprofiled - baseline score applied",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✕ Missing Purchase Order reference"
+        ],
+        "riskTier": "TIER_3_HIGH_RISK",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 50,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 40,
+        "recommendedMaxAdvance": 0.65,
+        "recommendedBaseRate": 13.8,
+        "explanation": "Composite Risk Score: 50/100 [Band: HIGH, Grade: TIER_3_HIGH_RISK, Confidence: LOW]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 50/100, Tenor Duration: 60d, Uncertainty Penalty: -40 pts.",
+        "assessedAt": "2026-08-29T00:03:45.748Z"
+      }
+    },
+    {
+      "id": "log-inv-new-1787961797840",
+      "timestamp": "2026-08-29T00:03:17.840Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "INFO",
+      "invoiceId": "inv-mtdma5pa",
+      "message": "Invoice [INV-2026-0817] formally submitted to the clearing market by supplier. Amount: ₹20L (Urgent requirement: ₹16L)."
+    },
+    {
+      "id": "log-scan-1787961783643",
+      "timestamp": "2026-08-29T00:03:03.643Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "SUCCESS",
+      "message": "Invoice document [Sample_Valid_Invoice_TradeCapital.pdf] scanned & verified: VERIFIED. Extracted Amount: ₹20,00,000, Supplier: Apex Precision Engineering Ltd, Buyer: Global Motors India Corp.",
+      "details": {
+        "filename": "Sample_Valid_Invoice_TradeCapital.pdf",
+        "verificationStatus": "VERIFIED",
+        "checklist": [
+          {
+            "key": "readable",
+            "label": "Invoice readable",
+            "passed": true,
+            "message": "Document text extracted successfully"
+          },
+          {
+            "key": "invoiceNumber",
+            "label": "Invoice number detected",
+            "passed": true,
+            "message": "Found INV-2026-0817"
+          },
+          {
+            "key": "supplier",
+            "label": "Supplier detected",
+            "passed": true,
+            "message": "Identified Apex Precision Engineering Ltd"
+          },
+          {
+            "key": "buyer",
+            "label": "Buyer detected",
+            "passed": true,
+            "message": "Identified Global Motors India Corp"
+          },
+          {
+            "key": "amount",
+            "label": "Invoice amount detected",
+            "passed": true,
+            "message": "Amount: ₹20,00,000"
+          },
+          {
+            "key": "invoiceDate",
+            "label": "Invoice date detected",
+            "passed": true,
+            "message": "Dated: 17-Aug-2026"
+          },
+          {
+            "key": "dueDate",
+            "label": "Due date / Tenor detected",
+            "passed": true,
+            "message": "Due: 16-Oct-2026"
+          }
+        ],
+        "extractedFields": {
+          "invoiceNumber": {
+            "value": "INV-2026-0817",
+            "rawText": "INV-2026-0817",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "supplierName": {
+            "value": "Apex Precision Engineering Ltd",
+            "rawText": "Apex Precision Engineering Ltd",
+            "status": "EXTRACTED",
+            "confidence": 0.98,
+            "matchedSupplierId": "sup-001",
+            "matchConfidence": 1
+          },
+          "buyerName": {
+            "value": "Global Motors India Corp",
+            "rawText": "Global Motors India Corp",
+            "status": "EXTRACTED",
+            "confidence": 0.98,
+            "matchedBuyerId": "buy-001",
+            "matchConfidence": 1
+          },
+          "invoiceAmount": {
+            "value": 2000000,
+            "amountLakhs": 20,
+            "formatted": "₹20,00,000",
+            "rawText": "TOTAL INVOICE VALUE   Rs. 20,00,000",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "currency": {
+            "value": "INR",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "invoiceDate": {
+            "value": "2026-08-17",
+            "formatted": "17-Aug-2026",
+            "rawText": "Invoice Date   17-Aug-2026",
+            "status": "EXTRACTED",
+            "confidence": 0.9
+          },
+          "dueDate": {
+            "value": "2026-10-16",
+            "formatted": "16-Oct-2026",
+            "rawText": "Due Date   16-Oct-2026",
+            "status": "EXTRACTED",
+            "confidence": 0.9
+          },
+          "paymentTerms": {
+            "value": "Net 60",
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "tenorDays": {
+            "value": 60,
+            "status": "EXTRACTED",
+            "confidence": 0.95
+          },
+          "purchaseOrderNumber": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          },
+          "eWayBillNumber": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          },
+          "goodsDescription": {
+            "value": null,
+            "status": "MISSING",
+            "confidence": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "log-ver-1787961050302-dx36",
+      "timestamp": "2026-08-28T23:50:50.302Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Invoice [INV-2026-APEX-001] 3-way verification evaluated: PASSED (Score: 100/100).",
+      "details": {
+        "status": "PASSED",
+        "verificationScore": 100,
+        "gstinActive": true,
+        "eWayBillValid": true,
+        "threeWayMatchScore": 95,
+        "buyerAcknowledged": true,
+        "flags": [],
+        "explanation": "Invoice passed electronic 3-way reconciliation (GSTIN active, verified eWay bill, matching PO).",
+        "verifiedAt": "2026-08-28T23:50:50.302Z"
+      }
+    },
+    {
+      "id": "log-risk-1787961050303-pa2d",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "message": "Risk assessment completed for INV-2026-APEX-001: LOW Risk [Tier TIER_1_AAA] (Score 81/100, Confidence: HIGH)",
+      "details": {
+        "compositeScore": 81,
+        "riskScore": 81,
+        "riskBand": "LOW",
+        "riskConfidence": "HIGH",
+        "riskReasons": [
+          "✓ Invoice document successfully verified with active GSTIN registry",
+          "✓ Prime enterprise debtor (Global Motors India Corp, Rating: AAA, Avg Pay: 45d)",
+          "✓ Minimal debtor dispute rate (0.1%)",
+          "✓ Proven supplier track record (34 deals completed, 0.0% default rate)",
+          "✓ Short tenor horizon (60 days) limits liquidity lockup",
+          "✓ Verified Purchase Order attached (PO-GM-2026-9921)"
+        ],
+        "riskTier": "TIER_1_AAA",
+        "buyerRiskScore": 96,
+        "supplierRiskScore": 95,
+        "tenorRiskScore": 95,
+        "informationUncertaintyPenalty": 0,
+        "recommendedMaxAdvance": 0.9,
+        "recommendedBaseRate": 9,
+        "explanation": "Composite Risk Score: 81/100 [Band: LOW, Grade: TIER_1_AAA, Confidence: HIGH]. Buyer Quality: 96/100 (AAA), Supplier Track Record: 95/100, Tenor Duration: 60d, Uncertainty Penalty: -0 pts.",
+        "assessedAt": "2026-08-28T23:50:50.303Z"
+      }
+    },
+    {
+      "id": "log-match-1787961050303-jvf5",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "Provider [National Apex Bank] approved for underwriting bidding. Suitability: 81/100."
+    },
+    {
+      "id": "log-match-1787961050303-z9jw",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Provider [Swift Growth Capital NBFC] approved for underwriting bidding. Suitability: 88/100."
+    },
+    {
+      "id": "log-match-1787961050303-6m89",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "Provider [Sovereign Supply Credit Fund] approved for underwriting bidding. Suitability: 86/100."
+    },
+    {
+      "id": "log-match-1787961050303-gp2k",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "DECISION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "Provider [Velocity FinTech Liquidity Pool] approved for underwriting bidding. Suitability: 96/100."
+    },
+    {
+      "id": "log-bid-1787961050303-s6oa",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-001",
+      "message": "[National Apex Bank] submitted autonomous offer: ₹14L advance @ 9%, Speed 72h.",
+      "details": {
+        "id": "off-prov-001-inv-demo-20l-mtdlufun",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-001",
+        "providerName": "National Apex Bank",
+        "providerType": "BANK",
+        "offeredAdvanceRate": 0.7,
+        "offeredAmountLakhs": 14,
+        "interestRatePercent": 9,
+        "originationFeePercent": 0.5,
+        "feeAmountLakhs": 0.07,
+        "netDisbursedLakhs": 13.93,
+        "settlementSpeedHours": 72,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.277,
+        "effectiveAnnualYield": 12,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "National Apex Bank generated autonomous bid: 70% advance (₹14L) @ 9% APR with 72h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-28T23:50:50.303Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961050303-ickd",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "[Swift Growth Capital NBFC] submitted autonomous offer: ₹18L advance @ 11.5%, Speed 2h.",
+      "details": {
+        "id": "off-prov-002-inv-demo-20l-mtdlufun",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-002",
+        "providerName": "Swift Growth Capital NBFC",
+        "providerType": "NBFC",
+        "offeredAdvanceRate": 0.9,
+        "offeredAmountLakhs": 18,
+        "interestRatePercent": 11.5,
+        "originationFeePercent": 0.2,
+        "feeAmountLakhs": 0.036,
+        "netDisbursedLakhs": 17.96,
+        "settlementSpeedHours": 2,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.376,
+        "effectiveAnnualYield": 12.7,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Swift Growth Capital NBFC generated autonomous bid: 90% advance (₹18L) @ 11.5% APR with 2h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-28T23:50:50.303Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961050303-f1fo",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-003",
+      "message": "[Sovereign Supply Credit Fund] submitted autonomous offer: ₹16L advance @ 10.2%, Speed 24h.",
+      "details": {
+        "id": "off-prov-003-inv-demo-20l-mtdlufun",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-003",
+        "providerName": "Sovereign Supply Credit Fund",
+        "providerType": "PRIVATE_CREDIT",
+        "offeredAdvanceRate": 0.8,
+        "offeredAmountLakhs": 16,
+        "interestRatePercent": 10.2,
+        "originationFeePercent": 0.35,
+        "feeAmountLakhs": 0.056,
+        "netDisbursedLakhs": 15.94,
+        "settlementSpeedHours": 24,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.324,
+        "effectiveAnnualYield": 12.3,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Sovereign Supply Credit Fund generated autonomous bid: 80% advance (₹16L) @ 10.2% APR with 24h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-28T23:50:50.303Z"
+      }
+    },
+    {
+      "id": "log-bid-1787961050303-6boz",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "ACTION",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-004",
+      "message": "[Velocity FinTech Liquidity Pool] submitted autonomous offer: ₹19L advance @ 13.2%, Speed 1h.",
+      "details": {
+        "id": "off-prov-004-inv-demo-20l-mtdlufun",
+        "invoiceId": "inv-demo-20l",
+        "providerId": "prov-004",
+        "providerName": "Velocity FinTech Liquidity Pool",
+        "providerType": "FINTECH",
+        "offeredAdvanceRate": 0.95,
+        "offeredAmountLakhs": 19,
+        "interestRatePercent": 13.2,
+        "originationFeePercent": 0.15,
+        "feeAmountLakhs": 0.029,
+        "netDisbursedLakhs": 18.97,
+        "settlementSpeedHours": 1,
+        "tenorDays": 60,
+        "totalFinancingCostLakhs": 0.441,
+        "effectiveAnnualYield": 14.1,
+        "utilityScore": 0,
+        "scoreBreakdown": {
+          "rateScore": 0,
+          "advanceScore": 0,
+          "speedScore": 0,
+          "feeScore": 0,
+          "tenorScore": 0
+        },
+        "rationale": "Velocity FinTech Liquidity Pool generated autonomous bid: 95% advance (₹19L) @ 13.2% APR with 1h settlement speed based on Tier [TIER_1_AAA].",
+        "isSelected": false,
+        "status": "PENDING",
+        "generatedAt": "2026-08-28T23:50:50.303Z"
+      }
+    },
+    {
+      "id": "log-eval-1787961050303-hlh0",
+      "timestamp": "2026-08-28T23:50:50.303Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "SUCCESS",
+      "invoiceId": "inv-demo-20l",
+      "providerId": "prov-002",
+      "message": "Clearing completed: Swift Growth Capital NBFC awarded deal. Utility Score: 92/100.",
+      "details": {
+        "winningOfferId": "off-prov-002-inv-demo-20l-mtdlufun",
+        "utilityScore": 92,
+        "explanation": "🎯 Multi-Attribute Decision: [Swift Growth Capital NBFC] won with Utility Score 92/100. Even though [National Apex Bank] offered a lower interest rate (9% vs 11.5%), it was outscored because [Swift Growth Capital NBFC] delivered 90% advance (₹18L meeting urgent need ₹16L) and 2h T+0 speed, whereas [National Apex Bank] offered only 70% advance (₹14L) with a 72h delay."
+      }
+    },
+    {
+      "id": "log-reset-1787960722690",
+      "timestamp": "2026-08-28T23:45:22.690Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "INFO",
+      "message": "System state reset to baseline benchmark dataset."
+    },
+    {
+      "id": "log-init-1",
+      "timestamp": "2026-08-28T21:46:47.122Z",
+      "agentName": "Agent 1: Supplier Demand & Verification Agent",
+      "level": "INFO",
+      "message": "Supplier Demand & Verification Agent initialized. Connected to GST Portal & eWay Bill mock registry."
+    },
+    {
+      "id": "log-init-2",
+      "timestamp": "2026-08-28T21:47:37.122Z",
+      "agentName": "Agent 2: Capital Provider Underwriting Agent",
+      "level": "INFO",
+      "message": "Capital Provider Underwriting Agents online across 4 institutions with ₹15.5 Cr deployable capital."
+    },
+    {
+      "id": "log-init-3",
+      "timestamp": "2026-08-28T21:48:27.122Z",
+      "agentName": "Agent 3: Marketplace Clearing & Settlement Agent",
+      "level": "INFO",
+      "message": "Marketplace Clearing & Settlement Agent online with multi-attribute TOPSIS utility optimization."
+    }
+  ]
+}
